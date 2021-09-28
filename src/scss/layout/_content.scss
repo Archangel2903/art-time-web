@@ -7,7 +7,10 @@
   flex-grow: 1;
   -webkit-flex-grow: 1;
   min-width: 320px;
+  max-width: 100%;
 }
+
+@import "modules/mini-portfolio";
 
 .main-slider {
 

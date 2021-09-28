@@ -1,3 +1,12 @@
+@keyframes rotate-loader {
+  from {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
 .loaded {
   .main-wrapper {
     display: none;
@@ -16,6 +25,7 @@
   transform: translate(-50%, -50%);
   width: 160px;
   height: 160px;
+  animation: rotate-loader 1.5s linear infinite alternate;
 
   img {
     display: block;
@@ -25,31 +35,24 @@
 }
 
 .main-wrapper {
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
+  flex-flow: column wrap;
   justify-content: space-between;
-  -webkit-align-content: stretch;
-  -ms-flex-line-pack: stretch;
   align-content: stretch;
-  -webkit-align-items: stretch;
-  -ms-flex-align: stretch;
   align-items: stretch;
-
   min-width: 320px;
   width: 100%;
   min-height: 100%;
   overflow: hidden;
   padding: 0;
   position: relative;
+}
+
+body.dark {
+  .main-wrapper {
+    background: $darkness-color;
+    color: white;
+  }
 }
 
 .row {
@@ -88,9 +91,4 @@
     object-fit: cover;
     object-position: center;
   }
-}
-
-.title {
-  font-size: 2.5rem;
-  font-weight: $font-weight-normal;
 }

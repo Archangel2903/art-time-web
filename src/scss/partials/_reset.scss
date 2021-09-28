@@ -19,6 +19,8 @@ html, body {
   text-size-adjust: none;
   font-family: $font-family-base;
   font-size: $font-size-default;
+  line-height: 1.667;
+  background: $lightning-color;
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, main {
