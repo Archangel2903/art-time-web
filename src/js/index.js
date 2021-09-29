@@ -19,6 +19,17 @@ $(window).on('load', function () {
 });
 
 $(function () {
+// Sandwich button
+    (function() {
+        const sandwich = document.querySelector('.menu-rails__sandwich');
+
+        sandwich.addEventListener('click', function() {
+            this.classList.toggle('opened');
+            this.nextElementSibling.classList.toggle('active');
+            document.body.classList.toggle('overflow-hidden');
+        });
+    })();
+
 // Select2
     (function() {
         let selectStyled = $('.select2');
