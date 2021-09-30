@@ -319,18 +319,18 @@ iframe {
 
 ::selection {
   text-shadow: none;
-  color: $text-color;
+  color: $lightning-color;
   background: $main-first-color;
 }
 
 ::-moz-selection {
   text-shadow: none;
-  color: $text-color;
+  color: $lightning-color;
   background: $main-first-color;
 }
 
 ::-ms-selection {
   text-shadow: none;
-  color: $text-color;
+  color: $lightning-color;
   background: $main-first-color;
 }
