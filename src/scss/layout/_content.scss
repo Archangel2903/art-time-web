@@ -1,7 +1,6 @@
 /*************************************************
 ********************* CONTENT ********************
 *************************************************/
-
 .content {
   order: 2;
   -webkit-order: 2;
@@ -13,8 +12,5 @@
 
 @import "modules/main-home";
 @import "modules/list-block";
-@import "modules/mini-portfolio";
-
-.main-slider {
-
-}
+@import "modules/portfolio";
+@import "modules/stages";

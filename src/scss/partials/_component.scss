@@ -288,3 +288,60 @@ textarea {
         }
     }
 }
+
+.swiper {
+    &-container {}
+
+    &-button {
+        &-prev, &-next {
+            position: absolute;
+            top: 50%;
+            width: 60px;
+            height: 60px;
+            margin: 0;
+            border: 1px solid $darkness-color;
+            border-radius: 100%;
+            background: none;
+            transform: translateY(-50%);
+
+            svg {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 18px;
+                height: 18px;
+                fill: $darkness-color;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        &-prev {
+            left: 0;
+
+            svg {
+                transform: translate(-50%, -50%) rotate(-180deg);
+            }
+        }
+        &-next {
+            right: 0;
+
+            svg {
+
+            }
+        }
+    }
+
+    &-pagination {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 0 60px;
+        transform: translate(-50%, -50%);
+    }
+}
