@@ -1,0 +1,22 @@
+/*************************************************
+******************* BRIEFING *********************
+*************************************************/
+.section-briefing {
+  padding: 170px 0;
+}
+
+.briefing-form {
+  &__top {
+    margin-bottom: 70px;
+  }
+  &__bottom {}
+
+  &__text-info {
+    font-size: 0.778em;
+    line-height: 1.2;
+
+    a {
+      border-bottom: 1px solid white;
+    }
+  }
+}

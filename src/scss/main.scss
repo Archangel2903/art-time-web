@@ -1,5 +1,6 @@
 @import 'partials/fonts';
 @import 'partials/variables';
+@import 'partials/animation';
 
 /* Bootstrap */
 //require
@@ -34,3 +35,5 @@
 @import 'layout/content';
 @import 'layout/footer';
 @import 'layout/media';
+//layout dark theme
+@import 'layout/dark-theme';

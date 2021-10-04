@@ -1,14 +1,24 @@
 /*************************************************
 ******************* COMPONENTS *******************
 *************************************************/
-.title {
+.title, h1, .h1 {
+    display: block;
     margin: 0 0 70px;
     font-size: 2.778rem;
     font-weight: $font-weight-sbold;
     line-height: 1.2;
 }
 
-.title-name {
+.title-section, h2, .h2 {
+    display: block;
+    margin: 0 0 30px;
+    font-size: 2em;
+    font-weight: $font-weight-sbold;
+    line-height: 1.28;
+}
+
+.title-name, h3, .h3 {
+    display: block;
     font-size: 1.389em;
     font-weight: $font-weight-sbold;
     line-height: 1.4;
@@ -303,6 +313,7 @@ textarea {
             border-radius: 100%;
             background: none;
             transform: translateY(-50%);
+            z-index: 1;
 
             svg {
                 position: absolute;
@@ -343,5 +354,6 @@ textarea {
         width: 100%;
         padding: 0 60px;
         transform: translate(-50%, -50%);
+        z-index: 0;
     }
 }

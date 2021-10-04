@@ -1,26 +1,6 @@
 /*************************************************
 ******************** UTILITS *********************
 *************************************************/
-@keyframes rotate-loader {
-  from {
-    transform: translate(-50%, -50%) rotate(-360deg);
-  }
-  to {
-    transform: translate(-50%, -50%) rotate(360deg);
-  }
-}
-
-@keyframes filling_button {
-  0% {
-    border-radius: 100%;
-    transform: translateY(-100%);
-  }
-  100% {
-    border-radius: 0%;
-    transform: translateY(0);
-  }
-}
-
 .loaded {
   .main-wrapper {
     display: none;
@@ -60,13 +40,6 @@
   overflow: hidden;
   padding: 0;
   position: relative;
-}
-
-body.dark {
-  .main-wrapper {
-    background: $darkness-color;
-    color: white;
-  }
 }
 
 .row {

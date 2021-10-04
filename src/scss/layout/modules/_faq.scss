@@ -1,0 +1,77 @@
+/*************************************************
+********************** FAQ ***********************
+*************************************************/
+.section-faq {
+  padding: 170px 0;
+}
+
+.faq {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: stretch;
+
+  &__box {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: stretch;
+    padding-bottom: 30px;
+    border-bottom: 1px solid $darkness-color;
+
+    &:not(:last-child) {
+      margin-bottom: 2em;
+    }
+
+    &.active {
+      .faq__box {
+        &-header-trigger {
+          transform: rotate3d(1, 0, 0, 180deg);
+        }
+      }
+    }
+
+    &-header {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-content: center;
+      align-items: center;
+
+      .title-name {
+        margin: 0;
+        cursor: pointer;
+      }
+
+      &-trigger {
+        display: inline-flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        background: $darkness-color;
+        transition: $transition-base;
+        cursor: pointer;
+
+        svg {
+          width: 13px;
+          height: 13px;
+          fill: white;
+        }
+      }
+    }
+
+    &-body {}
+
+    &-content {
+      max-width: 1040px;
+      padding-top: 20px;
+      margin: 0;
+    }
+  }
+}

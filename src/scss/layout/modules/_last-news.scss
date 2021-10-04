@@ -1,0 +1,68 @@
+/*************************************************
+******************* LAST NEWS ********************
+*************************************************/
+.section-last-news {
+  padding-bottom: 170px;
+}
+
+.last-news-box {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+
+  &:hover {
+    color: $text-color;
+
+    .last-news-box {
+      &__pic {
+        img {
+          transform: scale(1.25);
+        }
+      }
+
+      &__arrow {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0);
+      }
+    }
+  }
+
+  &__pic {
+    margin: 0 0 30px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 430px;
+      object-fit: cover;
+      object-position: center;
+      transition: $transition-base;
+    }
+  }
+
+  &__company {
+    margin: 0 0 30px;
+    color: inherit;
+    font-weight: 600;
+    line-height: 17px;
+  }
+
+  &__title {
+    @extend .title-name;
+    margin: 0 0 30px;
+    color: inherit;
+  }
+
+  &__arrow {
+    width: 26px;
+    height: 26px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-50%);
+    transition: $transition-base;
+  }
+}

@@ -70,22 +70,30 @@ $(function () {
         }
 
         if (stagesSliderWrap.length) {
+            let slider,
+                sliderThumb;
             let stagesSliderNav = document.querySelector('.stages-slider-nav');
             let stagesSliderText = document.querySelector('.stages-slider-content');
 
-            let contentSlider = new Swiper('.stages-slider-content', {
-                // observer: true,
-                // observeParents: true,
-                loop: true,
+            sliderThumb = new Swiper('.stages-slider-content', {
+                observer: true,
+                observeParents: true,
+                spaceBetween: 1,
                 slidesPerView: 1,
+                // freeMode: true,
+                watchSlidesVisibility: true,
+                watchSlidesProgress: true,
             });
 
-            let mainSlider = new Swiper('.stages-slider-nav', {
-                // observer: true,
-                // observeParents: true,
-                loop: true,
+            slider = new Swiper('.stages-slider-nav', {
+                observer: true,
+                observeParents: true,
                 slidesPerView: 1,
+                watchSlidesVisibility: true,
                 watchSlidesProgress: true,
+                thumbs: {
+                    swiper: sliderThumb,
+                },
                 navigation: {
                     prevEl: stagesSliderNav.querySelector('.swiper-button-prev'),
                     nextEl: stagesSliderNav.querySelector('.swiper-button-next'),
@@ -94,40 +102,30 @@ $(function () {
                     el: ".swiper-pagination",
                     type: "fraction",
                 },
-                thumb: {
-                    swiper: contentSlider,
-                },
             });
-
-            /*let stagesSliderNav = document.querySelector('.stages-slider-nav');
-            let stagesSliderText = document.querySelector('.stages-slider');
-
-            let sliderNav = new Swiper('.stages-slider-nav', {
-                loop: true,
-                slidesPerView: 1,
-                watchSlidesProgress: true,
-                navigation: {
-                    nextEl: stagesSliderNav.querySelector('.swiper-button-next'),
-                    prevEl: stagesSliderNav.querySelector('.swiper-button-prev'),
-                },
-                pagination: {
-                    el: stagesSliderNav.querySelector('.swiper-pagination'),
-                    type: "fraction",
-                },
-            });
-
-            let sliderContent = new Swiper('.stages-slider', {
-                loop: true,
-                slidesPerView: 1,
-                allowTouchMove: false,
-                thumbs: {
-                    swiper: sliderNav,
-                },
-            });
-
-            console.log(sliderNav);
-            console.log(sliderContent);*/
         }
+    })();
+
+// FAQ
+    (function() {
+        const faqBox = $('.faq__box');
+
+        faqBox.each((i, el) => {
+            if ($(el).hasClass('active')) {
+                $(el).find('.faq__box-body').slideDown()
+            }
+            else {
+                $(el).find('.faq__box-body').slideUp()
+            }
+        });
+        // faqBox.hasClass('active') ? faqBox.find('.faq__box-body').slideDown() : faqBox.find('.faq__box-body').slideUp();
+
+        const faqToggler = $('.faq__box-header');
+
+        faqToggler.on('click', function() {
+            $(this).parent().toggleClass('active');
+            $(this).next('.faq__box-body').stop().slideToggle(300);
+        });
     })();
 
 // Lazy load observer

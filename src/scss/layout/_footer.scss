@@ -5,6 +5,52 @@ footer.footer {
   order: 3;
   -webkit-order: 3;
   position: relative;
+  padding-top: 170px;
+  padding-bottom: 30px;
 }
 
-.copyright {}
+.footer-contacts {
+  margin: 0 0 70px;
+}
+
+.social-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
+  max-width: 320px;
+  padding: 0;
+  margin: 0;
+
+  li {
+    flex: 0 0 33%;
+    margin-right: 15%;
+    margin-bottom: 30px;
+
+    a {
+      font-weight: 600;
+    }
+  }
+}
+
+.footer-nav {
+  padding: 0;
+  margin: 0;
+
+  li {
+    line-height: 17px;
+
+    &:not(:last-child) {
+      margin-bottom: 47px;
+    }
+
+    a {}
+  }
+}
+
+.copyright {
+  margin-top: 190px;
+  font-size: 0.889em;
+  line-height: 0.95;
+}

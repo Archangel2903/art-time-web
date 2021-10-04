@@ -114,13 +114,26 @@ button, input, textarea {
   }
 }
 
+%placeholder-focus {
+  background: none;
+
+  &::-webkit-input-placeholder {
+    @include placeholder_focus();
+  }
+  &::-moz-placeholder {
+    @include placeholder_focus();
+  }
+  &::-ms-placeholder {
+    @include placeholder_focus();
+  }
+}
+
 ::-webkit-input-placeholder {
   font-weight: $font-weight-light;
   font-size: 1rem;
   color: $input-placeholder-color;
   transition: $transition-base;
 }
-
 ::-webkit-textarea-placeholder {
   font-weight: $font-weight-light;
   font-size: 1rem;
@@ -138,20 +151,7 @@ input {
     -moz-appearance: textfield;
 
     &:focus {
-      background: none;
-
-      &::-webkit-input-placeholder {
-        color: transparent;
-        transform: rotate3d(1, 0, 0, 90deg);
-      }
-      &::-moz-placeholder {
-        color: transparent;
-        transform: rotate3d(1, 0, 0, 90deg);
-      }
-      &::-ms-placeholder {
-        color: transparent;
-        transform: rotate3d(1, 0, 0, 90deg);
-      }
+      @extend %placeholder-focus;
     }
   }
   &[type="button"], &[type="checkbox"], &[type="image"], &[type="radio"], &[type="reset"], &[type="submit"] {
@@ -196,22 +196,10 @@ button {
 
 textarea {
   padding: 0 5px;
+  overflow: hidden;
 
   &:focus {
-    background: none;
-
-    &::-webkit-input-placeholder {
-      color: transparent;
-      transform: rotate3d(1, 0, 0, 90deg);
-    }
-    &::-moz-placeholder {
-      color: transparent;
-      transform: rotate3d(1, 0, 0, 90deg);
-    }
-    &::-ms-placeholder {
-      color: transparent;
-      transform: rotate3d(1, 0, 0, 90deg);
-    }
+    @extend %placeholder-focus;
   }
 
   &::-moz-placeholder {

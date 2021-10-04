@@ -1,0 +1,79 @@
+$text-color: white;
+
+.dark {
+  color: $text-color;
+  background: $darkness-color;
+
+  * {
+    border-color: #4D4A48 !important;
+  }
+  svg {
+    fill: $text-color;
+  }
+  .main-wrapper {
+    background: $darkness-color;
+    color: $text-color;
+  }
+  .menu-rails {
+    background: $darkness-color;
+    border-color: #4D4A48;
+
+    &__sandwich {
+      box-shadow: 0 0 0 1px white;
+
+      &::before, &::after {
+        background: white;
+      }
+    }
+  }
+  .button-action {
+    border: 1px solid white !important;
+
+    &__ico {
+      svg {
+        fill: $darkness-color;
+      }
+    }
+  }
+
+  input {
+    &.form-control {
+      border-color: rgba(255, 255, 255, 0.15) !important;
+    }
+
+    &[type="checkbox"] {
+      & ~ .checkbox {
+        .checkbox__style {
+          border-color: white !important;
+        }
+      }
+    }
+
+    &[type="radio"] {
+      display: none !important;
+      & ~ .radiobox {
+        .radiobox__style {
+          border-color: white !important;
+        }
+      }
+    }
+  }
+  textarea {
+    border-color: rgba(255, 255, 255, 0.15) !important;
+  }
+  a {
+    color: $text-color;
+
+    &:hover {
+      color: $main-first-color;
+    }
+  }
+
+  .list-block {
+    &__box {
+      &> * {
+        color: $text-color !important;
+      }
+    }
+  }
+}

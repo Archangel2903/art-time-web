@@ -3,16 +3,11 @@
 *************************************************/
 .section-portfolio-preview {
   padding: 170px 0 100px;
-  background: var(--main-dark);
 }
 
 .portfolio {
   &__head {
     margin-bottom: 90px;
-  }
-
-  &__title {
-    color: white;
   }
 
   &__body {}
@@ -50,10 +45,6 @@
       margin: 0 0 12px;
       color: $gray-color;
       line-height: 1.35;
-    }
-
-    &__name {
-      color: white;
     }
   }
 }
