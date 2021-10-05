@@ -142,9 +142,28 @@ $(function () {
                 }
             });
         });
-        if (imagesAll.length > 0) {
+        if (imagesAll.length) {
             imagesAll.forEach(function (image) {
                 imgObserve.observe(image);
+            });
+        }
+
+
+        const darkness = document.querySelectorAll('.dark');
+
+        let darkObserver = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                console.log(entry);
+                if (entry.intersectionRatio >= 0 && entry.target.classList.contains('dark')) {
+                    console.log('test');
+                }
+            });
+        });
+
+        if (darkObserver.length) {
+            darkness.forEach(function(dark) {
+                console.log(dark);
+                darkObserver.observe(dark);
             });
         }
     })();

@@ -12,6 +12,10 @@
   align-content: flex-start;
   align-items: flex-start;
 
+  .title-section {
+    margin: 0 0 70px;
+  }
+
   &__box {
     display: inline-flex;
     flex-flow: column wrap;

@@ -27,10 +27,6 @@ html, body {
   font-size: $font-size-default;
   line-height: 1.667;
   background: $lightning-color;
-
-  &.overflow-hidden {
-    padding-right: 17px;
-  }
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, main {
