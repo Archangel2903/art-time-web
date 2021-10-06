@@ -2,22 +2,23 @@
 ********************* STAGES *********************
 *************************************************/
 .section-stages {
-  padding: 170px 0 200px;
+  padding: 60px 0;
 }
 
 .stages {
   &-info {
     &__text {
-      margin: 0 0 70px;
+      margin: 0 0 60px;
     }
 
     &__pic {
       display: block;
       max-width: 945px;
-      margin: 0 auto 70px;
+      margin: 0 auto 60px;
 
       img {
-
+        width: 100%;
+        height: 100%;
       }
     }
   }
@@ -35,28 +36,74 @@
     }
 
     &-nav {
-      //width: 50%;
-
-      .swiper-slide {
-        margin: 0 0 70px;
-
-        p {
-          margin: 0;
-          font-size: 2em;
-          text-align: center;
-        }
+      &__text {
+        margin: 0 0 30px;
+        font-size: 1.389em;
+        font-weight: 500;
       }
 
       &__controls {
         position: relative;
-        max-width: 224px;
-        height: 60px;
-        margin: 0 auto;
+        max-width: 180px;
+        height: 20px;
+        margin: 0 0 30px;
       }
     }
 
     &-content {
-      //width: 50%;
+      &__text {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .stages {
+    &-slider {
+      &-nav {
+        &__text {
+          font-size: 2em;
+        }
+      }
+
+      &-content {
+        &__text {
+          font-size: 1em;
+        }
+      }
+    }
+  }
+}
+@include media-breakpoint-up(xl) {
+  .section-stages {
+    padding: 170px 0 200px;
+  }
+
+  .stages {
+    &-info {
+      &__text {
+        margin: 0 0 70px;
+      }
+
+      &-pic {
+        margin: 0 auto 70px;
+      }
+    }
+
+    &-slider {
+      &-nav {
+        &__text {
+          margin: 0 0 70px;
+          text-align: center;
+        }
+
+        &__controls {
+          max-width: 224px;
+          height: 60px;
+          margin: 0 auto;
+        }
+      }
     }
   }
 }

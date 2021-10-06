@@ -2,7 +2,7 @@
 ******************* LAST NEWS ********************
 *************************************************/
 .section-last-news {
-  padding-bottom: 170px;
+  padding-bottom: 60px;
 }
 
 .last-news-box {
@@ -12,6 +12,8 @@
   align-content: flex-start;
   align-items: flex-start;
   width: 100%;
+  max-width: 540px;
+  margin: 0 auto 60px;
 
   &:hover {
     color: $text-color;
@@ -22,22 +24,20 @@
           transform: scale(1.25);
         }
       }
-
-      &__arrow {
-        opacity: 1;
-        visibility: visible;
-        transform: translateX(0);
-      }
     }
   }
 
   &__pic {
+    display: block;
+    width: 100%;
+    max-width: 540px;
+    height: 280px;
     margin: 0 0 30px;
     overflow: hidden;
 
     img {
       width: 100%;
-      height: 430px;
+      height: 100%;
       object-fit: cover;
       object-position: center;
       transition: $transition-base;
@@ -60,9 +60,47 @@
   &__arrow {
     width: 26px;
     height: 26px;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateX(-50%);
     transition: $transition-base;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .last-news-box {
+    &__pic {
+      height: 360px;
+    }
+  }
+}
+@include media-breakpoint-up(lg) {
+  .last-news-box {
+    &__pic {
+      height: 430px;
+    }
+  }
+}
+@include media-breakpoint-up(xl) {
+  .section-last-news {
+    padding-bottom: 170px;
+  }
+
+  .last-news-box {
+    margin: 0 auto;
+
+    &:hover {
+      .last-news-box {
+        &__arrow {
+          opacity: 1;
+          visibility: visible;
+          transform: translateX(0);
+        }
+      }
+    }
+
+    &__arrow {
+      opacity: 0;
+      visibility: hidden;
+      transform: translateX(-50%);
+      transition: $transition-base;
+    }
   }
 }

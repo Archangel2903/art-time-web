@@ -4,7 +4,7 @@
 .title, h1, .h1 {
     display: block;
     margin: 0 0 70px;
-    font-size: 2.778rem;
+    font-size: 1.5rem;
     font-weight: $font-weight-sbold;
     line-height: 1.2;
 }
@@ -12,14 +12,14 @@
 .title-section, h2, .h2 {
     display: block;
     margin: 0 0 30px;
-    font-size: 25px;
+    font-size: 1.389rem;
     font-weight: $font-weight-sbold;
     line-height: 1.28;
 }
 
 .title-name, h3, .h3 {
     display: block;
-    font-size: 1.389em;
+    font-size: 1.111rem;
     font-weight: $font-weight-sbold;
     line-height: 1.4;
 }
@@ -157,6 +157,7 @@ input {
 
             .checkbox {
                 &__style {
+                    flex: 0 0 auto;
                     position: relative;
                     width: 25px;
                     height: 25px;
@@ -208,6 +209,7 @@ input {
 
             .radiobox {
                 &__style {
+                    flex: 0 0 auto;
                     position: relative;
                     width: 25px;
                     height: 25px;
@@ -306,11 +308,11 @@ textarea {
         &-prev, &-next {
             position: absolute;
             top: 50%;
-            width: 60px;
-            height: 60px;
+            //width: 60px;
+            //height: 60px;
             margin: 0;
-            border: 1px solid $darkness-color;
-            border-radius: 100%;
+            //border: 1px solid $darkness-color;
+            //border-radius: 100%;
             background: none;
             transform: translateY(-50%);
             z-index: 1;
@@ -352,7 +354,7 @@ textarea {
         align-content: center;
         align-items: center;
         width: 100%;
-        padding: 0 60px;
+        padding: 0 30px;
         transform: translate(-50%, -50%);
         z-index: 0;
     }

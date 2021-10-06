@@ -2,15 +2,18 @@
 *************** PORTFOLIO PREVIEW ****************
 *************************************************/
 .section-portfolio-preview {
-  padding: 170px 0 100px;
+  padding: 60px 0;
 }
 
 .portfolio {
-  &__head {
-    margin-bottom: 90px;
+  &__head {}
+  &__body {
+    &> *:last-child {
+      .portfolio-box {
+        margin: 0;
+      }
+    }
   }
-
-  &__body {}
 
   &-box {
     display: flex;
@@ -45,6 +48,18 @@
       margin: 0 0 12px;
       color: $gray-color;
       line-height: 1.35;
+    }
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .section-portfolio-preview {
+    padding: 170px 0 100px;
+  }
+
+  .portfolio {
+    &__head {
+      margin-bottom: 90px;
     }
   }
 }

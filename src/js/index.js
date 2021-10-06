@@ -80,7 +80,7 @@ $(function () {
                 observeParents: true,
                 spaceBetween: 1,
                 slidesPerView: 1,
-                // freeMode: true,
+                autoHeight: true,
                 watchSlidesVisibility: true,
                 watchSlidesProgress: true,
             });
@@ -89,6 +89,7 @@ $(function () {
                 observer: true,
                 observeParents: true,
                 slidesPerView: 1,
+                autoHeight: true,
                 watchSlidesVisibility: true,
                 watchSlidesProgress: true,
                 thumbs: {

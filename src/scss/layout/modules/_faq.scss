@@ -2,7 +2,7 @@
 ********************** FAQ ***********************
 *************************************************/
 .section-faq {
-  padding: 170px 0;
+  padding: 60px 0;
 }
 
 .faq {
@@ -35,7 +35,7 @@
 
     &-header {
       display: flex;
-      flex-flow: row wrap;
+      flex-flow: row nowrap;
       justify-content: space-between;
       align-content: center;
       align-items: center;
@@ -46,6 +46,7 @@
       }
 
       &-trigger {
+        flex: 0 0 auto;
         display: inline-flex;
         flex-flow: column wrap;
         justify-content: center;
@@ -73,5 +74,11 @@
       padding-top: 20px;
       margin: 0;
     }
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .section-faq {
+    padding: 170px 0;
   }
 }
