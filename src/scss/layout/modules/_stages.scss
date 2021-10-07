@@ -2,17 +2,13 @@
 ******************** STAGES **********************
 *************************************************/
 .section-stages {
-  padding-bottom: 200px;
+  padding-bottom: 60px;
 }
 
 .stages {
   &__line {
-    margin-bottom: 10px;
-
-    &:last-child {
-      .stages__number::after {
-        display: none;
-      }
+    &:not(:last-child) {
+      margin-bottom: 30px;
     }
   }
 
@@ -30,28 +26,57 @@
   }
 
   &__number {
-    margin-right: 55px;
+    flex: 0 0 auto;
+    margin-right: 15px;
     color: $gray-color;
     line-height: 1.5;
-
-    &::after {
-      content: '';
-      position: absolute;
-      top: 30px;
-      left: 25px;
-      width: 1px;
-      height: calc(100% - 27px);
-      background: #E3E3E3;
-    }
   }
 
   &__title {
+    flex: 0 0 calc(100% - 50px);
     font-weight: 600;
     font-size: 25px;
     line-height: 1;
   }
 
   &__text {
+    margin: 0 !important;
+  }
+}
 
+@include media-breakpoint-up(lg) {
+  .stages {
+    &__line {
+      margin-bottom: 10px;
+
+      &:last-child {
+        .stages__number::after {
+          display: none;
+        }
+      }
+    }
+
+    &__number {
+      margin-right: 55px;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 30px;
+        left: 25px;
+        width: 1px;
+        height: calc(100% - 27px);
+        background: #E3E3E3;
+      }
+    }
+
+    &__title {
+      flex: 0 0 calc(100% - 77px);
+    }
+  }
+}
+@include media-breakpoint-up(xl) {
+  .section-stages {
+    padding-bottom: 200px;
   }
 }
