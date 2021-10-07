@@ -1,0 +1,111 @@
+/*************************************************
+****************** STAGES MAIN *******************
+*************************************************/
+.section-stages-main {
+  padding: 60px 0;
+}
+
+.stages {
+  &-main {}
+
+  &-info {
+    &__text {
+      margin: 0 0 60px;
+    }
+
+    &__pic {
+      display: block;
+      max-width: 945px;
+      margin: 0 auto 60px;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  &-slider {
+    width: 100%;
+    overflow: hidden;
+
+    &-wrapper {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: flex-start;
+      align-content: flex-start;
+      align-items: flex-start;
+    }
+
+    &-nav {
+      &__text {
+        margin: 0 0 30px;
+        font-size: 1.389em;
+        font-weight: 500;
+      }
+
+      &__controls {
+        position: relative;
+        max-width: 180px;
+        height: 20px;
+        margin: 0 0 30px;
+      }
+    }
+
+    &-content {
+      &__text {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .stages {
+    &-slider {
+      &-nav {
+        &__text {
+          font-size: 2em;
+        }
+      }
+
+      &-content {
+        &__text {
+          font-size: 1em;
+        }
+      }
+    }
+  }
+}
+@include media-breakpoint-up(xl) {
+  .section-stages-main {
+    padding: 170px 0 200px;
+  }
+
+  .stages {
+    &-info {
+      &__text {
+        margin: 0 0 70px;
+      }
+
+      &-pic {
+        margin: 0 auto 70px;
+      }
+    }
+
+    &-slider {
+      &-nav {
+        &__text {
+          margin: 0 0 70px;
+          text-align: center;
+        }
+
+        &__controls {
+          max-width: 224px;
+          height: 60px;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}

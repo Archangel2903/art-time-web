@@ -28,7 +28,7 @@
   &__text {
     display: inline-flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-content: flex-start;
     align-items: flex-start;
     width: 95%;
@@ -38,7 +38,7 @@
     text-align: justify;
 
     span {
-      margin: 0 10px;
+      margin: 0 15px;
 
       &:first-child,
       &:last-child {
@@ -65,6 +65,13 @@
   }
 }
 
+@include media-breakpoint-up(sm) {
+  .main-home {
+    &__text {
+      justify-content: space-between;
+    }
+  }
+}
 @include media-breakpoint-up(md) {
   .main-home {
     &__title {
@@ -73,10 +80,6 @@
 
     &__text {
       font-size: 35px;
-
-      span {
-        margin: 0;
-      }
     }
 
     &__pic {
@@ -94,6 +97,10 @@
         height: 60px;
       }
     }
+
+    &__text {
+      justify-content: flex-start;
+    }
   }
 }
 @include media-breakpoint-up(xl) {
@@ -102,6 +109,10 @@
   }
 
   .main-home {
+    &__text {
+      justify-content: space-between;
+    }
+
     &__pic {
       display: block;
       max-width: none;
@@ -118,10 +129,6 @@
     &__text {
       margin: 0 0 70px;
       font-size: 2.778em;
-
-      span {
-        margin: 0;
-      }
     }
   }
 }

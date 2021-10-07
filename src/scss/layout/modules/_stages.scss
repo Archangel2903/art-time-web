@@ -1,109 +1,57 @@
 /*************************************************
-********************* STAGES *********************
+******************** STAGES **********************
 *************************************************/
 .section-stages {
-  padding: 60px 0;
+  padding-bottom: 200px;
 }
 
 .stages {
-  &-info {
-    &__text {
-      margin: 0 0 60px;
-    }
+  &__line {
+    margin-bottom: 10px;
 
-    &__pic {
-      display: block;
-      max-width: 945px;
-      margin: 0 auto 60px;
-
-      img {
-        width: 100%;
-        height: 100%;
+    &:last-child {
+      .stages__number::after {
+        display: none;
       }
     }
   }
 
-  &-slider {
-    width: 100%;
-    overflow: hidden;
-
-    &-wrapper {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: flex-start;
-      align-content: flex-start;
-      align-items: flex-start;
-    }
-
-    &-nav {
-      &__text {
-        margin: 0 0 30px;
-        font-size: 1.389em;
-        font-weight: 500;
-      }
-
-      &__controls {
-        position: relative;
-        max-width: 180px;
-        height: 20px;
-        margin: 0 0 30px;
-      }
-    }
-
-    &-content {
-      &__text {
-        font-size: 16px;
-      }
-    }
-  }
-}
-
-@include media-breakpoint-up(lg) {
-  .stages {
-    &-slider {
-      &-nav {
-        &__text {
-          font-size: 2em;
-        }
-      }
-
-      &-content {
-        &__text {
-          font-size: 1em;
-        }
-      }
-    }
-  }
-}
-@include media-breakpoint-up(xl) {
-  .section-stages {
-    padding: 170px 0 200px;
+  &__left {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
   }
 
-  .stages {
-    &-info {
-      &__text {
-        margin: 0 0 70px;
-      }
+  &__right {
 
-      &-pic {
-        margin: 0 auto 70px;
-      }
+  }
+
+  &__number {
+    margin-right: 55px;
+    color: $gray-color;
+    line-height: 1.5;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 30px;
+      left: 25px;
+      width: 1px;
+      height: calc(100% - 27px);
+      background: #E3E3E3;
     }
+  }
 
-    &-slider {
-      &-nav {
-        &__text {
-          margin: 0 0 70px;
-          text-align: center;
-        }
+  &__title {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 1;
+  }
 
-        &__controls {
-          max-width: 224px;
-          height: 60px;
-          margin: 0 auto;
-        }
-      }
-    }
+  &__text {
+
   }
 }

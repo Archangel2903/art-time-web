@@ -17,7 +17,7 @@ $(window).on('load', function () {
 
     b.removeClass('loaded');
 
-    alert(window.innerWidth);
+    // alert(window.innerWidth);
 });
 
 $(function () {
@@ -85,6 +85,7 @@ $(function () {
                 autoHeight: true,
                 watchSlidesVisibility: true,
                 watchSlidesProgress: true,
+                allowTouchMove: false
             });
 
             slider = new Swiper('.stages-slider-nav', {
@@ -151,9 +152,8 @@ $(function () {
             });
         }
 
-
+        /*
         const darkness = document.querySelectorAll('.dark');
-
         let darkObserver = new IntersectionObserver(function(entries) {
             entries.forEach(function(entry) {
                 console.log(entry);
@@ -162,12 +162,12 @@ $(function () {
                 }
             });
         });
-
         if (darkObserver.length) {
             darkness.forEach(function(dark) {
                 console.log(dark);
                 darkObserver.observe(dark);
             });
         }
+         */
     })();
 });

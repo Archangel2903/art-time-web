@@ -1,9 +1,7 @@
 /*************************************************
 ****************** LIST BLOCK ********************
 *************************************************/
-.section-list-block {
-  padding-bottom: 60px;
-}
+.section-list-block {}
 
 .list-block {
   display: flex;
@@ -47,7 +45,9 @@
     }
 
     &-numbering {
-
+      margin: 0 0 15px;
+      color: $gray-color;
+      line-height: 1.4;
     }
 
     &-title {
@@ -86,6 +86,12 @@
   .list-block {
     .title-section {
       margin: 0 0 70px;
+    }
+
+    &__box {
+      &-numbering {
+        margin: 0 0 30px;
+      }
     }
   }
 }
