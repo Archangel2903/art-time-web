@@ -242,7 +242,7 @@ input {
     &.form-control {
         height: 60px;
         padding: 12px 20px;
-        border: 1px solid rgba(27, 27, 27, 0.15);
+        border: 1px solid $darkness-color;
         border-radius: 999px;
         background: none;
         box-shadow: none !important;
@@ -261,7 +261,7 @@ textarea {
         min-height: 140px;
         height: 140px;
         max-height: 300px;
-        border: 1px solid rgba(27, 27, 27, 0.15);
+        border: 1px solid $darkness-color;
         border-radius: 24px;
         background: none;
         transition: $transition-base;
@@ -280,7 +280,7 @@ textarea {
             .select2-selection--single {
                 height: auto;
                 border: 1px solid $darkness-color;
-                border-radius: 999px;
+                border-radius: 30px;
                 background: transparent;
 
                 .select2-selection {
@@ -298,6 +298,10 @@ textarea {
                 }
             }
         }
+    }
+
+    &+ .select2-container {
+        width: 100%;
     }
 }
 
