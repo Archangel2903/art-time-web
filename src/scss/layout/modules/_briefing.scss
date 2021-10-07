@@ -7,7 +7,7 @@
 
 .briefing-form {
   &__top {
-    margin-bottom: 70px;
+    margin-bottom: 60px;
   }
   &__bottom {}
 
@@ -21,13 +21,14 @@
   }
 }
 
-@include media-breakpoint-up(sm) {}
-@include media-breakpoint-up(md) {}
-@include media-breakpoint-up(lg) {}
 @include media-breakpoint-up(xl) {
   .section-briefing {
     padding: 170px 0;
   }
+
+  .briefing-form {
+    &__top {
+      margin-bottom: 70px;
+    }
+  }
 }
-@include media-breakpoint-up(xxl) {}
-@include media-breakpoint-up(xxxl) {}
