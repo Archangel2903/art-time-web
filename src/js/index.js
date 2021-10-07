@@ -16,6 +16,8 @@ $(window).on('load', function () {
     }
 
     b.removeClass('loaded');
+
+    alert(window.innerWidth);
 });
 
 $(function () {
