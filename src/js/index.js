@@ -5,6 +5,7 @@ import 'bootstrap';
 import 'popper.js';
 import Swiper from 'swiper/dist/js/swiper.min';
 import 'select2';
+import IMask from "imask";
 
 $(window).on('load', function () {
     let b = $('body');
@@ -29,6 +30,64 @@ $(function () {
             this.classList.toggle('opened');
             this.nextElementSibling.classList.toggle('active');
             document.body.classList.toggle('overflow-hidden');
+        });
+    })();
+
+// IMask inputs
+    (function() {
+        const phoneInputs = document.querySelectorAll('.mask-phone');
+        const cardNumber = document.querySelectorAll('.mask-card');
+        const cardDate = document.querySelectorAll('.mask-card-date');
+
+        if (phoneInputs.length) {
+            phoneInputs.forEach(function (e, i) {
+                const phone = IMask(e, {
+                    mask: '+{38}(\\000)000-00-00',
+                    lazy: true,
+                    placeholderChar: '_',
+                });
+            });
+        }
+
+        if (cardNumber) {
+            cardNumber.forEach(function (e, i) {
+                const card = IMask(e, {
+                    mask: '0000 0000 0000 0000',
+                    lazy: true,
+                    placeholderChar: 'X',
+                });
+            });
+        }
+
+        if (cardDate) {
+            cardDate.forEach(function (e, i) {
+                const card = IMask(e, {
+                    mask: '00\\/00',
+                    lazy: true,
+                    placeholderChar: '0',
+                });
+            });
+        }
+    })();
+
+// FAQ
+    (function() {
+        const faqBox = $('.faq__box');
+
+        faqBox.each((i, el) => {
+            if ($(el).hasClass('active')) {
+                $(el).find('.faq__box-body').slideDown()
+            }
+            else {
+                $(el).find('.faq__box-body').slideUp()
+            }
+        });
+
+        const faqToggler = $('.faq__box-header');
+
+        faqToggler.on('click', function() {
+            $(this).parent().toggleClass('active');
+            $(this).next('.faq__box-body').stop().slideToggle(300);
         });
     })();
 
@@ -110,30 +169,25 @@ $(function () {
         }
     })();
 
-// FAQ
-    (function() {
-        const faqBox = $('.faq__box');
-
-        faqBox.each((i, el) => {
-            if ($(el).hasClass('active')) {
-                $(el).find('.faq__box-body').slideDown()
-            }
-            else {
-                $(el).find('.faq__box-body').slideUp()
-            }
-        });
-        // faqBox.hasClass('active') ? faqBox.find('.faq__box-body').slideDown() : faqBox.find('.faq__box-body').slideUp();
-
-        const faqToggler = $('.faq__box-header');
-
-        faqToggler.on('click', function() {
-            $(this).parent().toggleClass('active');
-            $(this).next('.faq__box-body').stop().slideToggle(300);
-        });
-    })();
-
 // Lazy load observer
     (function () {
+        /*const darkSection = document.querySelectorAll('.dark');
+        let sectionObserve = new IntersectionObserver(function (elements) {
+            elements.forEach(function (entry) {
+                if (entry.intersectionRatio >= 0 && entry.isIntersecting) {
+                    document.body.classList.add('dark');
+                }
+                else {
+                    document.body.classList.remove('dark');
+                }
+            });
+        });
+        if (darkSection.length) {
+            darkSection.forEach(function (section) {
+                sectionObserve.observe(section);
+            });
+        }*/
+
         const imagesAll = document.querySelectorAll('img[data-src]');
         let imgObserve = new IntersectionObserver(function (entries) {
             entries.forEach(function (entry) {
@@ -151,23 +205,5 @@ $(function () {
                 imgObserve.observe(image);
             });
         }
-
-        /*
-        const darkness = document.querySelectorAll('.dark');
-        let darkObserver = new IntersectionObserver(function(entries) {
-            entries.forEach(function(entry) {
-                console.log(entry);
-                if (entry.intersectionRatio >= 0 && entry.target.classList.contains('dark')) {
-                    console.log('test');
-                }
-            });
-        });
-        if (darkObserver.length) {
-            darkness.forEach(function(dark) {
-                console.log(dark);
-                darkObserver.observe(dark);
-            });
-        }
-         */
     })();
 });

@@ -36,6 +36,13 @@ $text-color: white;
     }
   }
 
+  ::-webkit-input-placeholder {
+    color: $lightning-color;
+  }
+  ::-webkit-textarea-placeholder {
+    color: $lightning-color;
+  }
+
   input {
     &.form-control {
       border-color: rgba(255, 255, 255, 0.15) !important;
@@ -57,9 +64,23 @@ $text-color: white;
         }
       }
     }
+
+    &::-moz-placeholder {
+      color: $lightning-color;
+    }
+    &::-ms-placeholder {
+      color: $lightning-color;
+    }
   }
   textarea {
     border-color: rgba(255, 255, 255, 0.15) !important;
+
+    &::-moz-placeholder {
+      color: $lightning-color;
+    }
+    &::-ms-placeholder {
+      color: $lightning-color;
+    }
   }
   a {
     color: $text-color;

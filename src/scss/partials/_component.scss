@@ -274,7 +274,119 @@ textarea {
     }
 }
 
+.close {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+    float: none;
+    opacity: 1;
+
+    &:hover {
+        svg {
+            fill: $main-first-color;
+        }
+    }
+
+    svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 18px;
+        height: 18px;
+        transform: translate(-50%, -50%) rotate(45deg);
+        transition: $transition-base;
+    }
+}
+
+.modal {
+    &-dialog {
+        width: 96%;
+
+        &-centered {
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+    &-content {
+        padding: 20px 15px;
+        background: $lightning-color;
+        border: 1px solid $darkness-color;
+        border-radius: 25px;
+    }
+    &-header {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0 0 30px;
+        border: none;
+
+        .close {
+            padding: 0;
+            margin: 0;
+        }
+    }
+    &-title {
+        @extend .title-name;
+        margin: 0;
+    }
+    &-body {
+        padding: 0;
+    }
+
+    &#modal_callback {
+        .modal {
+            &-dialog {
+                max-width: 460px;
+            }
+        }
+    }
+}
+
 .select2 {
+    &-container {
+        width: 100%;
+
+        &--default {
+            .select2-results {
+                .select2-results {
+                    &__option {
+                        &--highlighted {
+
+                            &.select2-results {
+                                &__option {
+                                    &--selectable {
+                                        background: none;
+                                        border-color: $main-first-color;
+                                        color: $main-first-color;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &-dropdown {
+        background: $lightning-color;
+        border-color: $darkness-color;
+        border-radius: 15px;
+    }
+
+    &-results {
+        &__option {
+            padding: 0 0 5px;
+            margin: 0 15px 15px;
+            border-bottom: 1px solid $darkness-color;
+            color: $darkness-color;
+        }
+    }
+
     &.select2-container {
         &--default {
             .select2-selection--single {
@@ -298,10 +410,6 @@ textarea {
                 }
             }
         }
-    }
-
-    &+ .select2-container {
-        width: 100%;
     }
 }
 
@@ -361,5 +469,13 @@ textarea {
         padding: 0 30px;
         transform: translate(-50%, -50%);
         z-index: 0;
+    }
+}
+
+.callback-form {
+    .form-group {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
     }
 }

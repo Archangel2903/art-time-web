@@ -10,7 +10,7 @@ $gray-color: #8C8C8C;
 // colors
 $title-color: $darkness-color;
 $text-color: $darkness-color;
-$input-placeholder-color: #1b1b1b;
+$input-placeholder-color: $darkness-color;
 
 // fonts
 $font-family-base: 'Manrope', sans-serif;
@@ -26,13 +26,13 @@ $font-size-default: 18px;
 $line-height-base: 1.25;
 
 // behavior
-$transition-base: all .3s ease-in-out 0s;
+$transition-base: all .3s ease 0s;
 
 //Bootstrap var
 $enable-shadows: true;
 $body-color: $text-color;
 
-$secondary: #8C8C8C;
+$secondary: $gray-color;
 
 $grid-breakpoints: (
         xs: 0,
