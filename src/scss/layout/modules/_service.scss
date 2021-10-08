@@ -1,0 +1,54 @@
+/*************************************************
+********************* SERVICE ********************
+*************************************************/
+.section-service-info {
+  padding-bottom: 60px;
+}
+
+.service {
+  &__block {
+    &:not(:last-child) {
+      margin-bottom: 100px;
+    }
+
+    .title {
+      margin-bottom: 60px;
+    }
+
+    .title-name {
+      margin-bottom: 30px;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+
+  &__box {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .service {
+    &__box {
+      &:not(:last-child) {
+        margin-bottom: 60px;
+      }
+    }
+  }
+}
+@include media-breakpoint-up(xl) {
+  .section-service-info {
+    padding-bottom: 110px;
+  }
+  .service {
+    &__block {
+      &:not(:last-child) {
+        margin-bottom: 200px;
+      }
+    }
+  }
+}

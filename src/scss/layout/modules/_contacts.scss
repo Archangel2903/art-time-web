@@ -41,7 +41,6 @@
     }
   }
 }
-@include media-breakpoint-up(md) {}
 @include media-breakpoint-up(lg) {
   .contacts {
     &__title {
@@ -60,5 +59,3 @@
     padding: 120px 0 170px;
   }
 }
-@include media-breakpoint-up(xxl) {}
-@include media-breakpoint-up(xxxl) {}
