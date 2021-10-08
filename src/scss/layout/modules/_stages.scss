@@ -62,7 +62,7 @@
       &::after {
         content: '';
         position: absolute;
-        top: 30px;
+        top: 40px;
         left: 25px;
         width: 1px;
         height: calc(100% - 27px);
@@ -71,7 +71,7 @@
     }
 
     &__title {
-      flex: 0 0 calc(100% - 77px);
+      flex: 0 0 calc(100% - 87px);
     }
   }
 }
