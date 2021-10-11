@@ -31,14 +31,14 @@
     justify-content: space-between;
     align-content: center;
     align-items: center;
-    height: auto;
-    padding: 15px 20px;
+    height: 60px;
+    padding: 10px 10px 10px 20px;
     border: 0 solid transparent;
     border-radius: 999px;
     background: $darkness-color;
     overflow: hidden;
     color: white;
-    font-size: 1.222rem;
+    font-size: 1rem;
     font-weight: 600;
 
     &::before {
@@ -84,6 +84,18 @@
         }
     }
 
+    &_auto {
+        height: auto;
+        padding: 15px 20px;
+        font-size: 1.222rem;
+
+        .button-action__ico {
+            svg {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
     &_sm {
         height: 60px;
         padding: 10px 10px 10px 20px;
@@ -102,7 +114,24 @@
         font-size: 1.389em;
     }
     &_outline-light {
-        border: 1px solid white;
+        background: $lightning-color;
+        border: 1px solid $darkness-color;
+        color: $darkness-color;
+
+        &::before {
+            background: $lightning-color;
+        }
+
+        &:hover {
+            color: $lightning-color;
+
+            .button-action {
+                &__num {
+                    background: $lightning-color;
+                    color: $darkness-color;
+                }
+            }
+        }
     }
 
     &__text {
@@ -124,11 +153,27 @@
             position: absolute;
             top: 50%;
             left: 50%;
-            width: 24px;
-            height: 24px;
+            width: 16px;
+            height: 16px;
             transform: translate(-50%, -50%);
             transition: $transition-base;
         }
+    }
+    &__num {
+        position: relative;
+        display: inline-flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        margin-left: 10px;
+        border-radius: 100%;
+        background: $darkness-color;
+        color: $lightning-color;
+        transition: $transition-base;
+        z-index: 1;
     }
 }
 
