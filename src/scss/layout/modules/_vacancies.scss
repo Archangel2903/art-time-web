@@ -1,0 +1,67 @@
+/*************************************************
+******************** VACANCIES *******************
+*************************************************/
+.section-vacancies {
+  padding-bottom: 60px;
+
+  .stages {
+    &__line {
+      &:not(:last-child) {
+        margin-bottom: 70px;
+      }
+    }
+
+    &__title {
+      font-size: 1em;
+    }
+  }
+}
+
+.vacancies {
+  &-box {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid $gray-color;
+
+    &__info {
+      display: inline-flex;
+      flex-flow: column wrap;
+      justify-content: flex-start;
+      align-content: center;
+      align-items: center;
+      margin: 0 0 10px;
+    }
+
+    &__number {
+      margin-bottom: 30px;
+    }
+
+    &__name {
+      font-weight: 600;
+    }
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .vacancies {
+    &-box {
+      flex-direction: row;
+      justify-content: space-between;
+
+      &__info {
+        align-content: flex-start;
+        align-items: flex-start;
+      }
+    }
+  }
+}
+@include media-breakpoint-up(xl) {
+  .section-vacancies {
+    padding-bottom: 200px;
+  }
+}

@@ -66,6 +66,7 @@
 
     &:hover {
         background: $main-first-color;
+        color: $lightning-color;
 
         .button-action {
             &__ico {
@@ -126,9 +127,28 @@
             color: $lightning-color;
 
             .button-action {
+                &__ico {
+                    background: $lightning-color;
+                    color: $darkness-color;
+
+                    svg {
+                        fill: $darkness-color;
+                    }
+                }
                 &__num {
                     background: $lightning-color;
                     color: $darkness-color;
+                }
+            }
+        }
+
+        .button-action {
+            &__ico {
+                background: $darkness-color;
+                color: $lightning-color;
+
+                svg {
+                    fill: $lightning-color;
                 }
             }
         }
