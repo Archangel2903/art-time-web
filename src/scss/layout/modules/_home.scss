@@ -11,7 +11,9 @@
     line-height: 1.125;
   }
 
-  &__text {}
+  &__text {
+    margin: 0;
+  }
 }
 
 @include media-breakpoint-up(sm) {}

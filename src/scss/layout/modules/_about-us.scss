@@ -1,0 +1,88 @@
+/*************************************************
+******************** ABOUT US ********************
+*************************************************/
+.section-about-company {
+  padding: 60px 0 0;
+
+  &__title {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    margin: 0 0 40px;
+    font-size: 210px;
+    line-height: 200px;
+
+    svg {
+      width: 70px;
+      height: 70px;
+    }
+  }
+}
+
+.about-company {
+  padding-top: 60px;
+  padding-bottom: 120px;
+
+  &-statistic {
+    margin: 0 0 30px;
+
+    &__box {
+      &:not(:last-child) {
+        margin: 0 0 70px;
+      }
+    }
+
+    &__value {
+      margin: 0 0 10px;
+      font-size: 4.444em;
+      font-weight: 600;
+      line-height: 1.125;
+    }
+
+    &__text {
+      margin: 0;
+    }
+  }
+
+  &-info {
+    &__title {
+      margin: 0 0 30px;
+    }
+
+    &__text {
+      margin: 0;
+    }
+  }
+}
+
+.section-qualities {
+  padding: 60px 0;
+}
+
+@include media-breakpoint-up(sm) {}
+@include media-breakpoint-up(md) {}
+@include media-breakpoint-up(lg) {
+  .about-company {
+    &-statistic {
+      margin: 0;
+    }
+  }
+}
+@include media-breakpoint-up(xl) {
+  .section-about-company {
+    padding: 170px 0 0;
+  }
+
+  .about-company {
+    padding-top: 120px;
+    padding-bottom: 240px;
+  }
+
+  .section-qualities {
+    padding: 170px 0;
+  }
+}
+@include media-breakpoint-up(xxl) {}
+@include media-breakpoint-up(xxxl) {}
