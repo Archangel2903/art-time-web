@@ -7,6 +7,7 @@
 
 .portfolio {
   &__head {}
+
   &__body {
     &> *:last-child {
       .portfolio-box {
@@ -24,9 +25,17 @@
     margin: 0 0 60px;
 
     &:hover {
-      .portfolio-box__pic {
-        img {
-          transform: scale(1.2);
+      .portfolio-box {
+        &__pic {
+          img {
+            transform: scale(1.2);
+          }
+        }
+
+        &__arrow {
+          opacity: 1;
+          visibility: visible;
+          transform: translate(0);
         }
       }
     }
@@ -49,6 +58,16 @@
       color: $gray-color;
       line-height: 1.35;
     }
+
+    &__arrow {
+      margin: 20px 0 0;
+      width: 24px;
+      height: 20px;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateX(-100%);
+      transition: $transition-base;
+    }
   }
 }
 
@@ -63,3 +82,34 @@
     }
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
