@@ -10,6 +10,11 @@ $text-color: white;
   svg {
     fill: $text-color;
   }
+  .section-bg {
+    &::after {
+      background: $darkness-color;
+    }
+  }
   .main-wrapper {
     background: $darkness-color;
     color: $text-color;
@@ -32,6 +37,40 @@ $text-color: white;
     &__ico {
       svg {
         fill: $darkness-color;
+      }
+    }
+
+    &_outline-light {
+      color: $lightning-color;
+
+      &:hover {
+        color: $lightning-color;
+
+        .button-action {
+          &__ico {
+            background: $darkness-color;
+            color: $lightning-color;
+
+            svg {
+              fill: $lightning-color;
+            }
+          }
+          &__num {
+            background: $lightning-color;
+            color: $darkness-color;
+          }
+        }
+      }
+
+      .button-action {
+        &__ico {
+          background: $lightning-color;
+          color: $darkness-color;
+
+          svg {
+            fill: $darkness-color;
+          }
+        }
       }
     }
   }

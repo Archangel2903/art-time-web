@@ -1,0 +1,24 @@
+/*************************************************
+***************** CASE PICTURES ******************
+*************************************************/
+.section-case-pictures {
+  padding: 0 0 170px;
+}
+
+.case-pic {
+  display: block;
+  width: 100%;
+
+  img {
+    width: 100%;
+    height: 675px;
+  }
+
+  &_view {
+    margin: 0 0 70px;
+
+    img {
+      height: 735px;
+    }
+  }
+}

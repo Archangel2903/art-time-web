@@ -85,75 +85,6 @@
         }
     }
 
-    &_auto {
-        height: auto;
-        padding: 15px 20px;
-        font-size: 1.222rem;
-
-        .button-action__ico {
-            svg {
-                width: 24px;
-                height: 24px;
-            }
-        }
-    }
-    &_sm {
-        height: 60px;
-        padding: 10px 10px 10px 20px;
-        font-size: 1rem;
-
-        .button-action__ico {
-            svg {
-                width: 16px;
-                height: 16px;
-            }
-        }
-    }
-    &_lg {
-        height: 90px;
-        padding: 25px 30px;
-        font-size: 1.389em;
-    }
-    &_outline-light {
-        background: $lightning-color;
-        border: 1px solid $darkness-color;
-        color: $darkness-color;
-
-        &::before {
-            background: $lightning-color;
-        }
-
-        &:hover {
-            color: $lightning-color;
-
-            .button-action {
-                &__ico {
-                    background: $lightning-color;
-                    color: $darkness-color;
-
-                    svg {
-                        fill: $darkness-color;
-                    }
-                }
-                &__num {
-                    background: $lightning-color;
-                    color: $darkness-color;
-                }
-            }
-        }
-
-        .button-action {
-            &__ico {
-                background: $darkness-color;
-                color: $lightning-color;
-
-                svg {
-                    fill: $lightning-color;
-                }
-            }
-        }
-    }
-
     &__text {
         position: relative;
         z-index: 1;
@@ -194,6 +125,75 @@
         color: $lightning-color;
         transition: $transition-base;
         z-index: 1;
+    }
+
+    &_auto {
+        height: auto;
+        padding: 15px 20px;
+        font-size: 1.222rem;
+
+        .button-action__ico {
+            svg {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+    &_sm {
+        height: 60px;
+        padding: 10px 10px 10px 20px;
+        font-size: 1rem;
+
+        .button-action__ico {
+            svg {
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+    &_lg {
+        height: 90px;
+        padding: 25px 30px;
+        font-size: 1.389em;
+    }
+    &_outline-light {
+        background: transparent;
+        border: 1px solid $darkness-color;
+        color: $darkness-color;
+
+        &::before {
+            background: transparent;
+        }
+
+        &:hover {
+            color: $lightning-color;
+
+            .button-action {
+                &__ico {
+                    background: $lightning-color;
+                    color: $darkness-color;
+
+                    svg {
+                        fill: $darkness-color;
+                    }
+                }
+                &__num {
+                    background: $lightning-color;
+                    color: $darkness-color;
+                }
+            }
+        }
+
+        .button-action {
+            &__ico {
+                background: $darkness-color;
+                color: $lightning-color;
+
+                svg {
+                    fill: $lightning-color;
+                }
+            }
+        }
     }
 }
 

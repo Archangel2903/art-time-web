@@ -55,7 +55,7 @@
   section.section,
   .section,
   footer.footer {
-    padding-left: 80px;
+    margin-left: 80px;
   }
 }
 @include media-breakpoint-up(xxl) {
@@ -63,7 +63,7 @@
   section.section,
   .section,
   footer.footer {
-    padding-left: 105px;
+    margin-left: 105px;
   }
 }
 @include media-breakpoint-up(xxxl) {

@@ -62,13 +62,13 @@
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
+  z-index: 0;
 
   &:after {
     content: '';
     @extend .section-bg;
-    opacity: .25;
-    //background: $main-first-color-custom;
+    opacity: .5;
+    background: $lightning-color;
     z-index: 0;
   }
 

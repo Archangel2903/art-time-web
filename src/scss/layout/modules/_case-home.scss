@@ -1,0 +1,23 @@
+/*************************************************
+******************** CASE HOME *******************
+*************************************************/
+.section-case-home {
+  height: 100%;
+  max-height: 880px;
+  padding: 60px 0;
+
+  &__title {
+    @extend .section-home__title;
+  }
+}
+
+@include media-breakpoint-up(sm) {}
+@include media-breakpoint-up(md) {}
+@include media-breakpoint-up(lg) {}
+@include media-breakpoint-up(xl) {
+  .section-case-home {
+    padding: 450px 0 120px;
+  }
+}
+@include media-breakpoint-up(xxl) {}
+@include media-breakpoint-up(xxxl) {}

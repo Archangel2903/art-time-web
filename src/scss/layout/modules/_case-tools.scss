@@ -1,0 +1,79 @@
+/*************************************************
+******************* CASE TOOLS *******************
+*************************************************/
+.section-case-tools {
+
+}
+
+.case {
+  &-tools {
+    margin-bottom: 170px;
+
+    &__pic {
+
+      img {
+
+      }
+    }
+  }
+
+  &-fonts {
+    .case-tools__pic {
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  &-colors {
+    &__items {
+      display: inline-flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      width: 100%;
+      padding: 33px;
+      margin: 0 0 30px;
+
+      &-text {
+        font-size: 1.389em;
+        font-weight: $font-weight-medium;
+      }
+    }
+  }
+
+  &-icons {}
+}
+
+.section-case-statistic {
+  padding: 0 0 170px;
+}
+
+.case-statistic {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+  align-items: flex-start;
+
+  &__box {
+    display: inline-flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+
+    &-value {
+      margin: 0 0 10px;
+      font-size: 4.444em;
+      font-weight: $font-weight-sbold;
+      line-height: 1;
+    }
+
+    &-text {
+      margin: 0;
+    }
+  }
+}

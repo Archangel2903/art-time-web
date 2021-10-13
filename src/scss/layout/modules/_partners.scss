@@ -62,8 +62,6 @@
     }
   }
 }
-@include media-breakpoint-up(md) {}
-@include media-breakpoint-up(lg) {}
 @include media-breakpoint-up(xl) {
   .section-partners {
     padding: 170px 0 60px;
@@ -73,5 +71,3 @@
     padding: 120px 0 170px;
   }
 }
-@include media-breakpoint-up(xxl) {}
-@include media-breakpoint-up(xxxl) {}
