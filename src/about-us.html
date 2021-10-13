@@ -96,7 +96,7 @@
                     </div>
 
                     <div class="col-xl-11">
-                        <picture>
+                        <picture class="section-about-company__pic">
                             <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/abstract02.svg') %>" alt="image" title="image">
                         </picture>
                     </div>
@@ -186,27 +186,79 @@
         <section class="section section-partners">
             <div class="container">
                 <div class="row">
-                    <div class="col-xxl-2 col-xl-3">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, incidunt!</p>
+                    <div class="col-xxxl-8 col-xxl-10">
+                        <p class="title">Мы сотрудничаем с амбициозными компаниями, большими и маленькими.</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <!--col-sm-6   col-md-5 offset-md-1   col-lg-4    col-xl-3    col-xxl-2 offset-xxl-1-->
+
+                    <div class="partners-box col-sm-6 col-md-5 col-lg-4 col-xl-3 col-xxxl-2">
+                        <picture class="partners-box__pic">
+                            <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/partners-logo01.png') %>" alt="image" title="image">
+                        </picture>
+
+                        <p class="partners-box__name title-name">Название компании</p>
+
+                        <p class="partners-box__text">Очень краткое описание компании и о нашей задаче</p>
                     </div>
 
-                    <div class="col-xxl-2 offset-xxl-1 col-xl-3">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, veritatis.</p>
+                    <div class="partners-box col-sm-6 col-md-5 offset-md-1 col-lg-4 offset-lg-0 col-xl-3 col-xxxl-2 offset-xxxl-1">
+                        <picture class="partners-box__pic">
+                            <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/partners-logo01.png') %>" alt="image" title="image">
+                        </picture>
+
+                        <p class="partners-box__name title-name">Название компании</p>
+
+                        <p class="partners-box__text">Очень краткое описание компании и о нашей задаче</p>
                     </div>
 
-                    <div class="col-xxl-2 offset-xxl-1 col-xl-3">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, non!</p>
+
+
+                    <div class="partners-box col-sm-6 col-md-5 col-lg-4 col-xl-3 col-xxxl-2 offset-xxxl-1">
+                        <picture class="partners-box__pic">
+                            <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/partners-logo01.png') %>" alt="image" title="image">
+                        </picture>
+
+                        <p class="partners-box__name title-name">Название компании</p>
+
+                        <p class="partners-box__text">Очень краткое описание компании и о нашей задаче</p>
                     </div>
 
-                    <div class="col-xxl-2 offset-xxl-1 col-xl-3">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, rem?</p>
+                    <div class="partners-box col-sm-6 col-md-5 offset-md-1 col-lg-4 offset-lg-0 col-xl-3 col-xxxl-2 offset-xxxl-1">
+                        <picture class="partners-box__pic">
+                            <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/partners-logo01.png') %>" alt="image" title="image">
+                        </picture>
+
+                        <p class="partners-box__name title-name">Название компании</p>
+
+                        <p class="partners-box__text">Очень краткое описание компании и о нашей задаче</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <section class="section section-partners-reviews">
-            <div class="container"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-5 col-lg-6">
+                        <div class="partners-reviews">
+                            <p class="partners-reviews__text">Хочу поблагодарить агенство Arttimeweb за качественную, ответственную и быструю работу. Оказанная помощь в составлении технического задания ускорило процесс создания сайта в разы. Если бы составляли сами, не продумали бы столько деталей и возможно потеряли бы часть клиентов. Еще раз спасибо огромное!</p>
+
+                            <p class="partners-reviews__author">АБУ - Альянс Будівельників України</p>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-5 offset-xxl-1 col-lg-6">
+                        <div class="partners-reviews">
+                            <p class="partners-reviews__text">Хочу поблагодарить агенство Arttimeweb за качественную, ответственную и быструю работу. Оказанная помощь в составлении технического задания ускорило процесс создания сайта в разы.</p>
+
+                            <p class="partners-reviews__author">АБУ - Альянс Будівельників України</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section class="section section-seo-text">
