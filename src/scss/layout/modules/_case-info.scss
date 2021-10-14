@@ -2,25 +2,27 @@
 ******************** CASE INFO *******************
 *************************************************/
 .section-case-description {
-  padding: 170px 0 240px;
+  padding: 60px 0 120px;
 }
 
 .case {
   &-info {
+    margin: 0 0 60px;
+
     &__box {
       &:not(:last-child) {
-        margin: 0 0 70px;
+        margin: 0 0 40px;
       }
 
       &-name {
-        margin: 0 0 30px;
+        margin: 0 0 20px;
         font-weight: 600;
       }
 
       &-text {
         margin: 0;
         &:not(:last-child) {
-          margin: 0 0 30px;
+          margin: 0 0 15px;
         }
       }
     }
@@ -29,11 +31,11 @@
   &-description {
     &__box {
       &:not(:last-child) {
-        margin: 0 0 70px;
+        margin: 0 0 40px;
       }
 
       &-name {
-        margin: 0 0 30px;
+        margin: 0 0 20px;
         font-size: 1.389em;
         font-weight: $font-weight-sbold;
       }
@@ -41,9 +43,91 @@
       &-text {
         margin: 0;
         &:not(:last-child) {
-          margin: 0 0 30px;
+          margin: 0 0 15px;
         }
       }
     }
+
+    &-stages {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-content: flex-start;
+      align-items: flex-start;
+      max-width: 720px;
+
+      &__box {
+        display: inline-flex;
+        flex-flow: column wrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        max-width: 325px;
+
+        &:not(:last-child) {
+          margin: 0 0 60px;
+        }
+
+        &-number {
+          margin: 0 0 20px;
+        }
+
+        &-text {
+          margin: 0;
+          font-weight: $font-weight-sbold;
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .case {
+    &-info {
+      margin: 0;
+
+      &__box {
+        &:not(:last-child) {
+          margin: 0 0 70px;
+        }
+
+        &-name {
+          margin: 0 0 30px;
+        }
+
+        &-text {
+          &:not(:last-child) {
+            margin: 0 0 30px;
+          }
+        }
+      }
+    }
+
+    &-description {
+      &__box {
+        &:not(:last-child) {
+          margin: 0 0 70px;
+        }
+
+        &-name {
+          margin: 0 0 30px;
+          font-size: 1.389em;
+          font-weight: $font-weight-sbold;
+        }
+
+        &-text {
+          margin: 0;
+          &:not(:last-child) {
+            margin: 0 0 30px;
+          }
+        }
+      }
+    }
+  }
+}
+@include media-breakpoint-up(xl) {
+  .section-case-description {
+    padding: 170px 0 240px;
   }
 }
