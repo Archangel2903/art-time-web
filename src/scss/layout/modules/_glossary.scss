@@ -16,6 +16,8 @@
 }
 
 .glossary-groups {
+  margin-bottom: 70px;
+
   &__btn {
     display: inline-block;
     height: 40px;
@@ -29,15 +31,111 @@
 }
 
 .glossary-orderliness {
-  &__btn {}
+  margin-bottom: 40px;
+
+  &__btn {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    padding: 20px;
+    border: 1px solid rgba(27, 27, 27, 0.25);
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 0 30px;
+
+    &:not(:last-child) {
+      margin: 0 19px 30px 0;
+    }
+  }
 }
 
-.section-glossary-stack {}
+.section-glossary-stack {
+  padding-bottom: 220px;
+}
 
 .stack-block {
-  &__name {}
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
+  &:not(:last-child) {
+    margin-bottom: 40px;
+  }
 
-  &__content {}
+  &__name {
+    margin-right: 30px;
+    font-weight: 600;
+    font-size: 25px;
+    text-transform: uppercase;
+  }
 
-  &__btn {}
+  &__content {
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+  }
+
+  &__btn {
+    display: inline-block;
+    height: 40px;
+    padding: 10px 12px;
+    border: 1px solid rgba(27, 27, 27, 0.25);
+    border-radius: 80px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    line-height: 17px;
+    margin: 0 0 30px;
+
+    &:not(:last-child) {
+      margin: 0 30px 30px 0;
+    }
+  }
+}
+
+.section-glossary-term {
+  padding: 120px 0 280px;
+}
+
+.glossary-term {
+  &__title {
+    margin: 0 0 30px;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  &__text {
+    margin: 0;
+
+    &:not(:last-child) {
+      margin: 0 0 30px;
+    }
+  }
+}
+
+.glossary-more-term {
+  &__title {
+    margin: 0 0 30px;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 34px;
+  }
+
+  &__list {
+    padding: 0;
+    margin: 0;
+
+    li {
+      &:not(:last-child) {
+        margin: 0 0 30px;
+      }
+    }
+  }
 }
