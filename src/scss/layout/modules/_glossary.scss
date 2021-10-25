@@ -17,7 +17,14 @@
 
 .glossary-groups {
   &__btn {
-
+    display: inline-block;
+    height: 40px;
+    padding: 10px 12px;
+    border: 1px solid rgba(27, 27, 27, 0.25);
+    border-radius: 80px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    line-height: 17px;
   }
 }
 
