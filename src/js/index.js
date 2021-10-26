@@ -22,6 +22,30 @@ $(window).on('load', function () {
 });
 
 $(function () {
+// Button to top
+    (function() {
+        const buttonToTop = $('#to-top');
+
+        buttonToTop.on('click', function () {
+            $('html, body').stop().animate({
+                scrollTop: 0,
+            }, 750);
+
+            return false;
+        });
+
+        $(window).on('scroll', function (e) {
+            let offsetTop = window.pageYOffset;
+
+            if (offsetTop <= 1100) {
+                buttonToTop.removeClass('show');
+            }
+            else {
+                buttonToTop.addClass('show');
+            }
+        });
+    })();
+
 // Sandwich button
     (function() {
         const sandwich = document.querySelector('.menu-rails__sandwich');

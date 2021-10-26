@@ -9,6 +9,12 @@
   &__title {
     @extend .section-home__title;
   }
+
+  .section-bg {
+    &::after {
+      display: none;
+    }
+  }
 }
 
 @include media-breakpoint-up(sm) {}

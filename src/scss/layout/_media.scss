@@ -54,25 +54,11 @@
   .main-wrapper {
     padding-left: 80px;
   }
-
-  /*header.header,
-  section.section,
-  .section,
-  footer.footer {
-    margin-left: 80px;
-  }*/
 }
 @include media-breakpoint-up(xxl) {
   .main-wrapper {
     padding-left: 105px;
   }
-
-  /*header.header,
-  section.section,
-  .section,
-  footer.footer {
-    margin-left: 105px;
-  }*/
 }
 @include media-breakpoint-up(xxxl) {
   .container {

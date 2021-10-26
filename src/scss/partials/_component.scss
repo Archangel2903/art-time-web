@@ -544,3 +544,33 @@ textarea {
         }
     }
 }
+
+#to-top {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background: $lightning-color;
+    border: 1px solid $darkness-color;
+    border-radius: 120px;
+    overflow: hidden;
+    transform: translate(100%, 100%) scale(0);
+    transition: $transition-base;
+    z-index: 10;
+
+    &.show {
+        transform: translate(0%, 0%) scale(1);
+    }
+
+    svg {
+        width: 20px;
+        height: 20px;
+        transform: rotate(-90deg);
+    }
+}
