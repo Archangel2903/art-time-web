@@ -6,6 +6,10 @@
 }
 
 .briefing-form {
+  &__title {
+    @extend .section-home__title;
+  }
+
   &__top {
     margin-bottom: 60px;
   }
@@ -21,6 +25,10 @@
   }
 }
 
+.section-full-briefing {
+  padding: 60px 0 120px;
+}
+
 @include media-breakpoint-up(xl) {
   .section-briefing {
     padding: 170px 0;
@@ -30,5 +38,9 @@
     &__top {
       margin-bottom: 70px;
     }
+  }
+
+  .section-full-briefing {
+    padding: 120px 0 240px;
   }
 }
