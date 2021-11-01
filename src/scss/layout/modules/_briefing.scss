@@ -13,7 +13,50 @@
   &__top {
     margin-bottom: 60px;
   }
-  &__bottom {}
+  &__control {
+    margin: 70px 0;
+
+    &> *:not(:first-child) {
+      margin-left: 30px;
+    }
+
+    &-btn {
+      display: inline-flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      width: 60px;
+      height: 60px;
+      background: none;
+      border: 1px solid $darkness-color;
+      border-radius: 120px;
+      overflow: hidden;
+
+      &-ico {
+        svg {
+          width: 18px;
+          height: 18px;
+          transition: $transition-base;
+        }
+      }
+
+      &:hover {
+        background: $darkness-color;
+
+        svg {
+          fill: $lightning-color;
+        }
+      }
+
+      &_prev {
+        svg {
+          transform: rotate(180deg);
+        }
+      }
+      &_next {}
+    }
+  }
 
   &__text-info {
     font-size: 0.778em;

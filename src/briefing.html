@@ -83,7 +83,7 @@
 
     <!-- CONTENT -->
     <main class="content">
-        <section class="section section-briefing" hidden>
+        <section class="section section-briefing">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -224,46 +224,777 @@
             <div class="container">
                 <form action="" class="briefing-form">
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-xl-6">
                             <p class="briefing-form__title">Бриф на разработку сайта</p>
                         </div>
                     </div>
 
                     <fieldset class="briefing-form__step">
                         <div class="row">
-                            <div class="col-xl-3">
-                                <label class="d-block">
+                            <div class="col-xl-5 col-md-6">
+                                <label class="d-block form-group mb-4">
                                     <input type="text" placeholder="Коротко о вашей компании" class="form-control">
                                 </label>
                             </div>
 
-                            <div class="col-xl-3">
-                                <label class="d-block">
+                            <div class="col-xl-5 col-md-6">
+                                <label class="d-block form-group mb-4">
                                     <input type="text" placeholder="Ваши конкуренты" class="form-control">
                                 </label>
                             </div>
 
-                            <div class="col-xl-3">
-                                <label class="d-block">
+                            <div class="col-xl-5 col-md-6">
+                                <label class="d-block form-group mb-4">
                                     <input type="text" placeholder="Целевая аудитория" class="form-control">
                                 </label>
                             </div>
 
-                            <div class="col-xl-3">
-                                <label class="d-block">
+                            <div class="col-xl-5 col-md-6">
+                                <label class="d-block form-group mb-4">
                                     <input type="text" placeholder="Сильные стороны компании" class="form-control">
                                 </label>
                             </div>
                         </div>
 
                         <div class="briefing-form__control">
+                            <button class="button-action button-action_outline-light">
+                                <span class="button-action__text">Заполнить бриф за меня</span>
+                            </button>
 
+                            <button class="briefing-form__control-btn briefing-form__control-btn_prev">
+                                <span class="briefing-form__control-btn-ico"><svg><use xlink:href="img/spritemap.svg#sprite-arrow-btn"></use></svg></span>
+                            </button>
+
+                            <button class="briefing-form__control-btn briefing-form__control-btn_next">
+                                <span class="briefing-form__control-btn-ico"><svg><use xlink:href="img/spritemap.svg#sprite-arrow-btn"></use></svg></span>
+                            </button>
                         </div>
                     </fieldset>
 
+                    <fieldset class="briefing-form__step">
+                        <div class="row">
+                            <div class="col-xl-3">
+                                <p>Вам необходимо:</p>
+                            </div>
 
-                    <fieldset class="briefing-form__step"></fieldset>
-                    <fieldset class="briefing-form__step"></fieldset>
+                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                <div class="form-group">
+                                    <label class="d-block">
+                                        <input type="checkbox" hidden>
+                                        <span class="checkbox">
+                                                <span class="checkbox__style"><svg><use xlink:href="img/spritemap.svg#sprite-star"></use></svg></span>
+                                                <span class="checkbox__text">Landing Page</span>
+                                            </span>
+                                    </label>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="d-block">
+                                        <input type="checkbox" hidden>
+                                        <span class="checkbox">
+                                                <span class="checkbox__style"><svg><use xlink:href="img/spritemap.svg#sprite-star"></use></svg></span>
+                                                <span class="checkbox__text">Сайт визитка</span>
+                                            </span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                <div class="form-group">
+                                    <label class="d-block">
+                                        <input type="checkbox" hidden>
+                                        <span class="checkbox">
+                                                <span class="checkbox__style"><svg><use xlink:href="img/spritemap.svg#sprite-star"></use></svg></span>
+                                                <span class="checkbox__text">Интернет магазин</span>
+                                            </span>
+                                    </label>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="d-block">
+                                        <input type="checkbox" hidden>
+                                        <span class="checkbox">
+                                                <span class="checkbox__style"><svg><use xlink:href="img/spritemap.svg#sprite-star"></use></svg></span>
+                                                <span class="checkbox__text">Сайт каталог</span>
+                                            </span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                <div class="form-group">
+                                    <label class="d-block">
+                                        <input type="checkbox" hidden>
+                                        <span class="checkbox">
+                                                <span class="checkbox__style"><svg><use xlink:href="img/spritemap.svg#sprite-star"></use></svg></span>
+                                                <span class="checkbox__text">Корпоративный сайт</span>
+                                            </span>
+                                    </label>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="d-block">
+                                        <input type="checkbox" hidden>
+                                        <span class="checkbox">
+                                                <span class="checkbox__style"><svg><use xlink:href="img/spritemap.svg#sprite-star"></use></svg></span>
+                                                <span class="checkbox__text">Индивидуальное решение</span>
+                                            </span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="briefing-form__control">
+                            <button class="button-action button-action_outline-light">
+                                <span class="button-action__text">Заполнить бриф за меня</span>
+                            </button>
+
+                            <button class="briefing-form__control-btn briefing-form__control-btn_prev">
+                                <span class="briefing-form__control-btn-ico"><svg><use xlink:href="img/spritemap.svg#sprite-arrow-btn"></use></svg></span>
+                            </button>
+                            <button class="briefing-form__control-btn briefing-form__control-btn_next">
+                                <span class="briefing-form__control-btn-ico"><svg><use xlink:href="img/spritemap.svg#sprite-arrow-btn"></use></svg></span>
+                            </button>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="briefing-form__step">
+                        <div class="row">
+                            <div class="col-xl-2">
+                                <p>Функционал 1/3:</p>
+                            </div>
+
+                            <div class="col-xl-2 col-lg-4 col-sm-6">
+                                <div class="form-group">
+                                    <label class="d-block">
+                                        <input type="checkbox" hidden>
+                                        <span class="checkbox">
+                                                <span class="checkbox__style"><svg><use xlink:href="img/spritemap.svg#sprite-star"></use></svg></span>
+                                                <span class="checkbox__text">Новостной блок</span>
+                                            </span>
+                                    </label>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="d-block">
+                                        <input type="checkbox" hidden>
+                                        <span class="checkbox">
+                                                <span class="checkbox__style"><svg><use xlink:href="img/spritemap.svg#sprite-star"></use></svg></span>
+                                                <span class="checkbox__text">Отзывы клиентов</span>
+                                            </span>
+                                    </label>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="d-block">
+                                        <input type="checkbox" hidden>
+                                        <span class="checkbox">
+                                                <span class="checkbox__style"><svg><use xlink:href="img/spritemap.svg#sprite-star"></use></svg></span>
+                                                <span class="checkbox__text">Калькулятор</span>
+                                            </span>
+                                    </label>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="d-block">
+                                        <input type="checkbox" hidden>
+                                        <span class="checkbox">
+                                                <span class="checkbox__style"><svg><use xlink:href="img/spritemap.svg#sprite-star"></use></svg></span>
+                                                <span class="checkbox__text">Голосование</span>
+                                            </span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-2 col-lg-4 col-sm-6">
+                                <div class="form-group">
+                                    <label class="d-block">
+                                        <input type="checkbox" hidden>
+                                        <span class="checkbox">
+                                                <span class="checkbox__style"><svg><use xlink:href="img/spritemap.svg#sprite-star"></use></svg></span>
+                                                <span class="checkbox__text">Карта проезда</span>
+                                            </span>
+                                    </label>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="d-block">
+                                        <input type="checkbox" hidden>
+                                        <span class="checkbox">
+                                                <span class="checkbox__style"><svg><use xlink:href="img/spritemap.svg#sprite-star"></use></svg></span>
+                                                <span class="checkbox__text">Фотогалерея</span>
+                                            </span>
+                                    </label>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="d-block">
+                                        <input type="checkbox" hidden>
+                                        <span class="checkbox">
+                                                <span class="checkbox__style"><svg><use xlink:href="img/spritemap.svg#sprite-star"></use></svg></span>
+                                                <span class="checkbox__text">Анимация</span>
+                                            </span>
+                                    </label>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="d-block">
+                                        <input type="checkbox" hidden>
+                                        <span class="checkbox">
+                                                <span class="checkbox__style"><svg><use xlink:href="img/spritemap.svg#sprite-star"></use></svg></span>
+                                                <span class="checkbox__text">Форум</span>
+                                            </span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-2 col-lg-4 col-sm-6">
+                                <div class="form-group">
+                                    <label class="d-block">
+                                        <input type="checkbox" hidden>
+                                        <span class="checkbox">
+                                                <span class="checkbox__style"><svg><use xlink:href="img/spritemap.svg#sprite-star"></use></svg></span>
+                                                <span class="checkbox__text">Кнопка call-back</span>
+                                            </span>
+                                    </label>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="d-block">
+                                        <input type="checkbox" hidden>
+                                        <span class="checkbox">
+                                                <span class="checkbox__style"><svg><use xlink:href="img/spritemap.svg#sprite-star"></use></svg></span>
+                                                <span class="checkbox__text">Форма обратной связи</span>
+                                            </span>
+                                    </label>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="d-block">
+                                        <input type="checkbox" hidden>
+                                        <span class="checkbox">
+                                                <span class="checkbox__style"><svg><use xlink:href="img/spritemap.svg#sprite-star"></use></svg></span>
+                                                <span class="checkbox__text">Подписка на рассылку</span>
+                                            </span>
+                                    </label>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="d-block">
+                                        <input type="checkbox" hidden>
+                                        <span class="checkbox">
+                                                <span class="checkbox__style"><svg><use xlink:href="img/spritemap.svg#sprite-star"></use></svg></span>
+                                                <span class="checkbox__text">Online консультант</span>
+                                            </span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-2 col-lg-4 col-sl-6">
+                                <div class="form-group">
+                                    <label class="d-block">
+                                        <input type="checkbox" hidden>
+                                        <span class="checkbox">
+                                                <span class="checkbox__style"><svg><use xlink:href="img/spritemap.svg#sprite-star"></use></svg></span>
+                                                <span class="checkbox__text">Online оплата</span>
+                                            </span>
+                                    </label>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="d-block">
+                                        <input type="checkbox" hidden>
+                                        <span class="checkbox">
+                                                <span class="checkbox__style"><svg><use xlink:href="img/spritemap.svg#sprite-star"></use></svg></span>
+                                                <span class="checkbox__text">Личный кабинет пользователя</span>
+                                            </span>
+                                    </label>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="d-block">
+                                        <input type="checkbox" hidden>
+                                        <span class="checkbox">
+                                                <span class="checkbox__style"><svg><use xlink:href="img/spritemap.svg#sprite-star"></use></svg></span>
+                                                <span class="checkbox__text">Поиск по сайту</span>
+                                            </span>
+                                    </label>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="d-block">
+                                        <input type="checkbox" hidden>
+                                        <span class="checkbox">
+                                                <span class="checkbox__style"><svg><use xlink:href="img/spritemap.svg#sprite-star"></use></svg></span>
+                                                <span class="checkbox__text">Мультиязычность</span>
+                                            </span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="briefing-form__control">
+                            <button class="button-action button-action_outline-light">
+                                <span class="button-action__text">Заполнить бриф за меня</span>
+                            </button>
+
+                            <button class="briefing-form__control-btn briefing-form__control-btn_prev">
+                                <span class="briefing-form__control-btn-ico"><svg><use xlink:href="img/spritemap.svg#sprite-arrow-btn"></use></svg></span>
+                            </button>
+                            <button class="briefing-form__control-btn briefing-form__control-btn_next">
+                                <span class="briefing-form__control-btn-ico"><svg><use xlink:href="img/spritemap.svg#sprite-arrow-btn"></use></svg></span>
+                            </button>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="briefing-form__step">
+                        <div class="row">
+                            <div class="col-xl-2">
+                                <p>Функционал 2/3:</p>
+                            </div>
+
+                            <div class="col-xl-2 col-lg-4 col-sm-6">
+                                <div class="form-group">
+                                    <label class="d-block">
+                                        <input type="checkbox" hidden>
+                                        <span class="checkbox">
+                                                <span class="checkbox__style"><svg><use xlink:href="img/spritemap.svg#sprite-star"></use></svg></span>
+                                                <span class="checkbox__text">Корзина</span>
+                                            </span>
+                                    </label>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="d-block">
+                                        <input type="checkbox" hidden>
+                                        <span class="checkbox">
+                                                <span class="checkbox__style"><svg><use xlink:href="img/spritemap.svg#sprite-star"></use></svg></span>
+                                                <span class="checkbox__text">Список желаний</span>
+                                            </span>
+                                    </label>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="d-block">
+                                        <input type="checkbox" hidden>
+                                        <span class="checkbox">
+                                                <span class="checkbox__style"><svg><use xlink:href="img/spritemap.svg#sprite-star"></use></svg></span>
+                                                <span class="checkbox__text">Заказ в 1 клик</span>
+                                            </span>
+                                    </label>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="d-block">
+                                        <input type="checkbox" hidden>
+                                        <span class="checkbox">
+                                                <span class="checkbox__style"><svg><use xlink:href="img/spritemap.svg#sprite-star"></use></svg></span>
+                                                <span class="checkbox__text">GeoIP</span>
+                                            </span>
+                                        <span><small>определение местоположения посетителя</small></span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-2 col-lg-4 col-sm-6">
+                                <div class="form-group">
+                                    <label class="d-block">
+                                        <input type="checkbox" hidden>
+                                        <span class="checkbox">
+                                                <span class="checkbox__style"><svg><use xlink:href="img/spritemap.svg#sprite-star"></use></svg></span>
+                                                <span class="checkbox__text">Регистрация через соц. сети</span>
+                                            </span>
+                                    </label>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="d-block">
+                                        <input type="checkbox" hidden>
+                                        <span class="checkbox">
+                                                <span class="checkbox__style"><svg><use xlink:href="img/spritemap.svg#sprite-star"></use></svg></span>
+                                                <span class="checkbox__text">Email-рассылка товаров</span>
+                                            </span>
+                                    </label>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="d-block">
+                                        <input type="checkbox" hidden>
+                                        <span class="checkbox">
+                                                <span class="checkbox__style"><svg><use xlink:href="img/spritemap.svg#sprite-star"></use></svg></span>
+                                                <span class="checkbox__text">Дисконтный таймер</span>
+                                            </span>
+                                    </label>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="d-block">
+                                        <input type="checkbox" hidden>
+                                        <span class="checkbox">
+                                                <span class="checkbox__style"><svg><use xlink:href="img/spritemap.svg#sprite-star"></use></svg></span>
+                                                <span class="checkbox__text">Бонусная система</span>
+                                            </span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-2 col-lg-4 col-sm-6">
+                                <div class="form-group">
+                                    <label class="d-block">
+                                        <input type="checkbox" hidden>
+                                        <span class="checkbox">
+                                                <span class="checkbox__style"><svg><use xlink:href="img/spritemap.svg#sprite-star"></use></svg></span>
+                                                <span class="checkbox__text">Скидочные купоны</span>
+                                            </span>
+                                    </label>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="d-block">
+                                        <input type="checkbox" hidden>
+                                        <span class="checkbox">
+                                                <span class="checkbox__style"><svg><use xlink:href="img/spritemap.svg#sprite-star"></use></svg></span>
+                                                <span class="checkbox__text">Скидка от количества товаров</span>
+                                            </span>
+                                    </label>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="d-block">
+                                        <input type="checkbox" hidden>
+                                        <span class="checkbox">
+                                                <span class="checkbox__style"><svg><use xlink:href="img/spritemap.svg#sprite-star"></use></svg></span>
+                                                <span class="checkbox__text">Скидка от суммы заказа</span>
+                                            </span>
+                                    </label>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="d-block">
+                                        <input type="checkbox" hidden>
+                                        <span class="checkbox">
+                                                <span class="checkbox__style"><svg><use xlink:href="img/spritemap.svg#sprite-star"></use></svg></span>
+                                                <span class="checkbox__text">Накопительная система скидок</span>
+                                            </span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-2 col-lg-4 col-sm-6">
+                                <div class="form-group">
+                                    <label class="d-block">
+                                        <input type="checkbox" hidden>
+                                        <span class="checkbox">
+                                                <span class="checkbox__style"><svg><use xlink:href="img/spritemap.svg#sprite-star"></use></svg></span>
+                                                <span class="checkbox__text">Изменение цен от курса</span>
+                                            </span>
+                                    </label>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="d-block">
+                                        <input type="checkbox" hidden>
+                                        <span class="checkbox">
+                                                <span class="checkbox__style"><svg><use xlink:href="img/spritemap.svg#sprite-star"></use></svg></span>
+                                                <span class="checkbox__text">Мультивалютность</span>
+                                            </span>
+                                    </label>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="d-block">
+                                        <input type="checkbox" hidden>
+                                        <span class="checkbox">
+                                                <span class="checkbox__style"><svg><use xlink:href="img/spritemap.svg#sprite-star"></use></svg></span>
+                                                <span class="checkbox__text">Синхронизация с 1С</span>
+                                            </span>
+                                    </label>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="d-block">
+                                        <input type="checkbox" hidden>
+                                        <span class="checkbox">
+                                                <span class="checkbox__style"><svg><use xlink:href="img/spritemap.svg#sprite-star"></use></svg></span>
+                                                <span class="checkbox__text">Интеграция с Новой почтой</span>
+                                            </span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="briefing-form__control">
+                            <button class="button-action button-action_outline-light">
+                                <span class="button-action__text">Заполнить бриф за меня</span>
+                            </button>
+
+                            <button class="briefing-form__control-btn briefing-form__control-btn_prev">
+                                <span class="briefing-form__control-btn-ico"><svg><use xlink:href="img/spritemap.svg#sprite-arrow-btn"></use></svg></span>
+                            </button>
+                            <button class="briefing-form__control-btn briefing-form__control-btn_next">
+                                <span class="briefing-form__control-btn-ico"><svg><use xlink:href="img/spritemap.svg#sprite-arrow-btn"></use></svg></span>
+                            </button>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="briefing-form__step">
+                        <div class="row">
+                            <div class="col-xl-2">
+                                <p>Функционал 3/3:</p>
+                            </div>
+
+                            <div class="col-xl-2 col-lg-4 col-sm-6">
+                                <div class="form-group">
+                                    <label class="d-block">
+                                        <input type="checkbox" hidden>
+                                        <span class="checkbox">
+                                                <span class="checkbox__style"><svg><use xlink:href="img/spritemap.svg#sprite-star"></use></svg></span>
+                                                <span class="checkbox__text">Аналогичные товары</span>
+                                            </span>
+                                    </label>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="d-block">
+                                        <input type="checkbox" hidden>
+                                        <span class="checkbox">
+                                                <span class="checkbox__style"><svg><use xlink:href="img/spritemap.svg#sprite-star"></use></svg></span>
+                                                <span class="checkbox__text">Последние просмотренные товары</span>
+                                            </span>
+                                    </label>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="d-block">
+                                        <input type="checkbox" hidden>
+                                        <span class="checkbox">
+                                                <span class="checkbox__style"><svg><use xlink:href="img/spritemap.svg#sprite-star"></use></svg></span>
+                                                <span class="checkbox__text">Рекомендуемые товары</span>
+                                            </span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-2 col-lg-4 col-sm-6">
+                                <div class="form-group">
+                                    <label class="d-block">
+                                        <input type="checkbox" hidden>
+                                        <span class="checkbox">
+                                                <span class="checkbox__style"><svg><use xlink:href="img/spritemap.svg#sprite-star"></use></svg></span>
+                                                <span class="checkbox__text">Ярлыки на товарах</span>
+                                            </span>
+                                    </label>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="d-block">
+                                        <input type="checkbox" hidden>
+                                        <span class="checkbox">
+                                                <span class="checkbox__style"><svg><use xlink:href="img/spritemap.svg#sprite-star"></use></svg></span>
+                                                <span class="checkbox__text">Водный знак на фото</span>
+                                            </span>
+                                    </label>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="d-block">
+                                        <input type="checkbox" hidden>
+                                        <span class="checkbox">
+                                                <span class="checkbox__style"><svg><use xlink:href="img/spritemap.svg#sprite-star"></use></svg></span>
+                                                <span class="checkbox__text">Два вида отображения</span>
+                                            </span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-2 col-lg-4 col-sm-6">
+                                <div class="form-group">
+                                    <label class="d-block">
+                                        <input type="checkbox" hidden>
+                                        <span class="checkbox">
+                                                <span class="checkbox__style"><svg><use xlink:href="img/spritemap.svg#sprite-star"></use></svg></span>
+                                                <span class="checkbox__text">Параметры товара</span>
+                                            </span>
+                                    </label>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="d-block">
+                                        <input type="checkbox" hidden>
+                                        <span class="checkbox">
+                                                <span class="checkbox__style"><svg><use xlink:href="img/spritemap.svg#sprite-star"></use></svg></span>
+                                                <span class="checkbox__text">Отзывы о товаре</span>
+                                            </span>
+                                    </label>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="d-block">
+                                        <input type="checkbox" hidden>
+                                        <span class="checkbox">
+                                                <span class="checkbox__style"><svg><use xlink:href="img/spritemap.svg#sprite-star"></use></svg></span>
+                                                <span class="checkbox__text">Задать вопрос по товару</span>
+                                            </span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-2 col-lg-4 col-sm-6">
+                                <div class="form-group">
+                                    <label class="d-block">
+                                        <input type="checkbox" hidden>
+                                        <span class="checkbox">
+                                                <span class="checkbox__style"><svg><use xlink:href="img/spritemap.svg#sprite-star"></use></svg></span>
+                                                <span class="checkbox__text">Фильтры подбора товара</span>
+                                            </span>
+                                    </label>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="d-block">
+                                        <input type="checkbox" hidden>
+                                        <span class="checkbox">
+                                                <span class="checkbox__style"><svg><use xlink:href="img/spritemap.svg#sprite-star"></use></svg></span>
+                                                <span class="checkbox__text">Сравнение товаров</span>
+                                            </span>
+                                    </label>
+                                </div>
+                                <div class="form-group">
+                                    <label class="d-block">
+                                        <input type="checkbox" hidden>
+                                        <span class="checkbox">
+                                                <span class="checkbox__style"><svg><use xlink:href="img/spritemap.svg#sprite-star"></use></svg></span>
+                                                <span class="checkbox__text">Файлы для скачивания (PDF)</span>
+                                            </span>
+                                    </label>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="briefing-form__control">
+                            <button class="briefing-form__control-btn briefing-form__control-btn_prev">
+                                <span class="briefing-form__control-btn-ico"><svg><use xlink:href="img/spritemap.svg#sprite-arrow-btn"></use></svg></span>
+                            </button>
+
+                            <label class="button-action button-action_outline-light">
+                                <input type="file" hidden>
+                                <span class="button-action__text">Прикрепить ТЗ</span>
+                                <span class="button-action__ico"><svg><use xlink:href="img/spritemap.svg#sprite-link"></use></svg></span>
+                            </label>
+
+                            <button class="button-action">
+                                <span class="button-action__text">Отправить бриф</span>
+                                <span class="button-action__ico"><svg><use xlink:href="img/spritemap.svg#sprite-arrow-btn"></use></svg></span>
+                            </button>
+                        </div>
+                    </fieldset>
+                </form>
+
+                <form action="" class="briefing-form">
+                    <div class="row">
+                        <div class="col-xl-6">
+                            <p class="briefing-form__title">Бриф на разработку дизайна</p>
+                        </div>
+                    </div>
+
+                    <fieldset class="briefing-form__step">
+                        <div class="row">
+                            <div class="col-xl-5 col-md-6">
+                                <label class="d-block form-group mb-4">
+                                    <input type="text" placeholder="Сайты которые нравятся" class="form-control">
+                                </label>
+                            </div>
+
+                            <div class="col-xl-5 col-md-6">
+                                <label class="d-block form-group mb-4">
+                                    <input type="text" placeholder="Сайты которые не нравятся" class="form-control">
+                                </label>
+                            </div>
+
+                            <div class="col-xl-5 col-md-6">
+                                <label class="d-block form-group mb-4">
+                                    <input type="text" placeholder="Описание что понравилось" class="form-control">
+                                </label>
+                            </div>
+
+                            <div class="col-xl-5 col-md-6">
+                                <label class="d-block form-group mb-4">
+                                    <input type="text" placeholder="Описание что не понравилось" class="form-control">
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="briefing-form__control">
+                            <button class="button-action button-action_outline-light">
+                                <span class="button-action__text">Заполнить бриф за меня</span>
+                            </button>
+
+                            <button class="briefing-form__control-btn briefing-form__control-btn_prev">
+                                <span class="briefing-form__control-btn-ico"><svg><use xlink:href="img/spritemap.svg#sprite-arrow-btn"></use></svg></span>
+                            </button>
+
+                            <button class="briefing-form__control-btn briefing-form__control-btn_next">
+                                <span class="briefing-form__control-btn-ico"><svg><use xlink:href="img/spritemap.svg#sprite-arrow-btn"></use></svg></span>
+                            </button>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="briefing-form__step">
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                <div class="form-group mb-5">
+                                    <label class="d-block">
+                                        <input type="checkbox" hidden>
+                                        <span class="checkbox checkbox_toggle">
+                                            <span class="checkbox__text">Логотип компании:</span>
+                                            <span class="checkbox__style"></span>
+                                        </span>
+                                    </label>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="d-block">
+                                        <input type="checkbox" hidden>
+                                        <span class="checkbox checkbox_toggle">
+                                            <span class="checkbox__text">Фирменный стиль:</span>
+                                            <span class="checkbox__style"></span>
+                                        </span>
+                                        <small>цвет, шрифты, guide по использованию логотипа</small>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                <div class="form-group">
+                                    <label class="d-block">
+                                        <input type="checkbox" hidden>
+                                        <span class="checkbox checkbox_toggle">
+                                            <span class="checkbox__text">Фотографии и видео ролики:</span>
+                                            <span class="checkbox__style"></span>
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="briefing-form__control">
+                            <button class="briefing-form__control-btn briefing-form__control-btn_prev">
+                                <span class="briefing-form__control-btn-ico"><svg><use xlink:href="img/spritemap.svg#sprite-arrow-btn"></use></svg></span>
+                            </button>
+
+                            <label class="button-action button-action_outline-light">
+                                <input type="file" hidden>
+                                <span class="button-action__text">Прикрепить ТЗ</span>
+                                <span class="button-action__ico"><svg><use xlink:href="img/spritemap.svg#sprite-link"></use></svg></span>
+                            </label>
+
+                            <button class="button-action">
+                                <span class="button-action__text">Отправить бриф</span>
+                                <span class="button-action__ico"><svg><use xlink:href="img/spritemap.svg#sprite-arrow-btn"></use></svg></span>
+                            </button>
+                        </div>
+                    </fieldset>
                 </form>
             </div>
         </section>
