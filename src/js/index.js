@@ -57,6 +57,11 @@ $(function () {
         });
     })();
 
+// Step form
+    (function() {
+
+    })();
+
 // IMask inputs
     (function() {
         const phoneInputs = document.querySelectorAll('.mask-phone');

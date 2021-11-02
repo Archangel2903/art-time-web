@@ -142,4 +142,12 @@ $text-color: white;
       color: white;
     }
   }
+
+  .briefing-form {
+    &__text-info {
+      a {
+        border-bottom: 1px solid $lightning-color;
+      }
+    }
+  }
 }

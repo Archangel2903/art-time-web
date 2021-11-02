@@ -295,7 +295,7 @@ input {
           }
 
           &__text {
-            flex: 0 0 75%;
+            flex: 0 0 70%;
           }
         }
       }
@@ -604,15 +604,15 @@ textarea {
 
 #to-top {
   position: fixed;
-  right: 30px;
-  bottom: 30px;
+  right: 10px;
+  bottom: 10px;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-content: center;
   align-items: center;
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   background: $lightning-color;
   border: 1px solid $darkness-color;
   border-radius: 120px;
@@ -626,8 +626,8 @@ textarea {
   }
 
   svg {
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
     transform: rotate(-90deg);
   }
 }

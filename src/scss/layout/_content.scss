@@ -6,6 +6,11 @@
   -webkit-order: 2;
   flex-grow: 1;
   -webkit-flex-grow: 1;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: stretch;
   min-width: 320px;
   max-width: 100%;
 }
