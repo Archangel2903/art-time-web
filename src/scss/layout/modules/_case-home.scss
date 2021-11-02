@@ -10,11 +10,11 @@
     @extend .section-home__title;
   }
 
-  .section-bg {
+  /*.section-bg {
     &::after {
       display: none;
     }
-  }
+  }*/
 }
 
 @include media-breakpoint-up(sm) {}

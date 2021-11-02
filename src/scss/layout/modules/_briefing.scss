@@ -13,6 +13,12 @@
   &__top {
     margin-bottom: 60px;
   }
+  &__step {
+    display: none;
+    &.show {
+      display: block;
+    }
+  }
   &__control {
     display: flex;
     flex-flow: row wrap;
@@ -42,6 +48,8 @@
       overflow: hidden;
 
       &-ico {
+        pointer-events: none;
+
         svg {
           width: 18px;
           height: 18px;
