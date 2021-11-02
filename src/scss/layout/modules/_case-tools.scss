@@ -9,8 +9,9 @@
     margin: 0 0 30px;
 
     img {
+      display: block;
       width: 100%;
-      height: 700px;
+      //height: 700px;
       object-fit: cover;
       object-position: center;
     }
@@ -128,6 +129,14 @@
   }
 }
 @include media-breakpoint-up(md) {
+  .section-case-pictures {
+    picture {
+      img {
+        height: 360px;
+      }
+    }
+  }
+
   .case {
     &-colors {
       &__items {
@@ -136,10 +145,24 @@
     }
   }
 }
-@include media-breakpoint-up(lg) {}
+@include media-breakpoint-up(lg) {
+  .section-case-pictures {
+    picture {
+      img {
+        height: 480px;
+      }
+    }
+  }
+}
 @include media-breakpoint-up(xl) {
   .section-case-pictures {
     padding: 0 0 170px;
+
+    picture {
+      img {
+        height: 560px;
+      }
+    }
   }
 
   .case-pic {
@@ -167,4 +190,12 @@
   }
 }
 @include media-breakpoint-up(xxl) {}
-@include media-breakpoint-up(xxxl) {}
+@include media-breakpoint-up(xxxl) {
+  .section-case-pictures {
+    picture {
+      img {
+        height: 700px;
+      }
+    }
+  }
+}

@@ -59,7 +59,32 @@ $(function () {
 
 // Step form
     (function() {
+        const currentStep = 0;
+        const briefingForm = $('.briefing-form');
+        const formSteps = briefingForm.find('.briefing-form__step');
+        const formNav = $('.briefing-form .briefing-form__control-btn')
+        const formNavPrev = $('.briefing-form .briefing-form__control-btn_prev');
+        const formNavNext = $('.briefing-form .briefing-form__control-btn_next');
 
+        formNav.on('click', function(e) {
+            e.preventDefault();
+
+
+            let step = $(e).parents('.briefing-form__step');
+            console.log($(e));
+        });
+
+        function formNavigation(n) {
+            let x = document.getElementsByClassName('briefing-form__step');
+
+            x[currentStep].style.display = 'none';
+
+        }
+
+
+        if (briefingForm.find('.briefing-form__step')) {
+
+        }
     })();
 
 // IMask inputs
