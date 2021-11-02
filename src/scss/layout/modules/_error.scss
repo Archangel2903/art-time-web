@@ -1,0 +1,43 @@
+/**/
+
+.section-error {
+  padding: 60px 0;
+}
+
+.error-block {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+
+  &__pic {
+    margin: 0 0 30px;
+
+    img {
+      display: block;
+      width: 100%;
+      max-width: 835px;
+    }
+  }
+
+  &__text {
+    margin: 0;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 48px;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .error-block {
+    &__text {
+      font-size: 35px;
+    }
+  }
+}
+@include media-breakpoint-up(xl) {
+  .section-error {
+    padding: 230px 0 0;
+  }
+}
