@@ -57,35 +57,6 @@ $(function () {
         });
     })();
 
-// Step form
-    (function() {
-        const formNav = $('.briefing-form .briefing-form__control-btn')
-
-        formNav.on('click', function(e) {
-            e.preventDefault();
-            const btn = e.target;
-
-            if (e.target.classList.contains('briefing-form__control-btn_prev')) {
-                if (btn.classList.contains('briefing-form__control-btn_prev') && btn.closest('.briefing-form__step').previousElementSibling.classList.contains('briefing-form__step')) {
-                    btn.closest('.briefing-form__step').classList.remove('show');
-                    btn.closest('.briefing-form__step').previousElementSibling.classList.add('show');
-                }
-                else {
-                    return false;
-                }
-            }
-            else if (btn.classList.contains('briefing-form__control-btn_next') && btn.closest('.briefing-form__step').nextElementSibling.classList.contains('briefing-form__step')) {
-                if (btn.closest('.briefing-form__step').nextElementSibling.classList.contains('briefing-form__step')) {
-                    btn.closest('.briefing-form__step').classList.remove('show');
-                    btn.closest('.briefing-form__step').nextElementSibling.classList.add('show');
-                }
-                else {
-                    return false;
-                }
-            }
-        });
-    })();
-
 // IMask inputs
     (function() {
         const phoneInputs = document.querySelectorAll('.mask-phone');
@@ -219,6 +190,88 @@ $(function () {
                     type: "fraction",
                 },
             });
+        }
+    })();
+
+// Step form
+    (function() {
+        const formNav = $('.briefing-form .briefing-form__control-btn');
+        formNav.on('click', function(e) {
+            e.preventDefault();
+            const btn = e.target;
+
+            if (e.target.classList.contains('briefing-form__control-btn_prev')) {
+                if (btn.classList.contains('briefing-form__control-btn_prev') && btn.closest('.briefing-form__step').previousElementSibling.classList.contains('briefing-form__step')) {
+                    btn.closest('.briefing-form__step').classList.remove('show');
+                    btn.closest('.briefing-form__step').previousElementSibling.classList.add('show');
+                }
+                else {
+                    return false;
+                }
+            }
+            else if (btn.classList.contains('briefing-form__control-btn_next') && btn.closest('.briefing-form__step').nextElementSibling.classList.contains('briefing-form__step')) {
+                if (btn.closest('.briefing-form__step').nextElementSibling.classList.contains('briefing-form__step')) {
+                    btn.closest('.briefing-form__step').classList.remove('show');
+                    btn.closest('.briefing-form__step').nextElementSibling.classList.add('show');
+                }
+                else {
+                    return false;
+                }
+            }
+        });
+    })();
+
+// File input listener
+    (function() {
+        const file = document.querySelectorAll('input[type="file"]');
+
+        file.forEach((el, i) => {
+            if (el.nextElementSibling.classList.contains('button-action__text')) {
+                el.addEventListener('change', function() {
+                    readFile(this);
+                });
+            }
+        });
+
+        function readFile(input) {
+            let preview = input.nextElementSibling;
+
+            console.log(preview);
+            console.log(input);
+            console.log(input.files);
+            console.log(input.files[0]);
+            console.log(input.files[0].name);
+            // console.log(input.files[0].type.match(`image.*`));
+
+            if (true) {
+                let reader = new FileReader();
+
+                reader.onload = function (e) {
+                    preview.innerText = input.files[0].name;
+                }
+
+                reader.readAsDataURL(input.files[0]);
+            }
+            else {
+                preview.innerText(preview.data('error'));
+            }
+        }
+
+
+        function readUrl(input) {
+            let preview = $('#trademark_img_preview img');
+            if (input.files[0].type.match(`image.*`)) {
+                let reader = new FileReader();
+
+                reader.onload = function (e) {
+                    preview.attr('src', e.target.result);
+                }
+
+                reader.readAsDataURL(input.files[0]);
+            }
+            else {
+                preview.attr('src', preview.data('error'));
+            }
         }
     })();
 

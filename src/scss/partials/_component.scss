@@ -40,6 +40,7 @@
   color: white;
   font-size: 1rem;
   font-weight: 600;
+  cursor: pointer;
 
   &::before {
     content: '';
@@ -368,6 +369,14 @@ input {
       color: white;
     }
   }
+
+  &[type="file"] {
+    & + .button-action__text {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
 }
 
 textarea {
@@ -456,11 +465,13 @@ textarea {
     padding: 0;
   }
 
-  &#modal_callback {
-    .modal {
-      &-dialog {
-        max-width: 460px;
-      }
+  &.modal-form {
+    .modal-dialog {
+      max-width: 460px;
+    }
+
+    input.form-control {
+      border-color: $darkness-color;
     }
   }
 }
@@ -499,10 +510,22 @@ textarea {
 
   &-results {
     &__option {
+      width: 100%;
+      max-width: 350px;
       padding: 0 0 5px;
-      margin: 0 15px 15px;
-      border-bottom: 1px solid $darkness-color;
+      margin: 0 auto;
+      border-bottom: 1px solid transparent;
       color: $darkness-color;
+
+      &:not(:last-child) {
+        padding: 0 0 8px;
+        margin: 0 auto 8px;
+        border-bottom: 1px solid $darkness-color;
+      }
+
+      &:first-child {
+        padding: 8px 0;
+      }
     }
   }
 
@@ -526,6 +549,10 @@ textarea {
             b {
 
             }
+          }
+
+          &__placeholder {
+            color: $darkness-color;
           }
         }
       }

@@ -5,7 +5,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, shrink-to-fit=no">
     <title>Вакансии</title>
-<link rel="shortcut icon" href="favicon.ico"><link href="style.002da8c19f94b08ef3ce.min.css" rel="stylesheet"></head>
+<link rel="shortcut icon" href="favicon.ico"><link href="style.79f9af12558f4757e8e1.min.css" rel="stylesheet"></head>
 <body class="loaded">
 <!-- BODY -->
 <div class="main-wrapper">
@@ -83,7 +83,7 @@
 
     <!-- CONTENT -->
     <main class="content">
-        <section class="section section-home pb-0">
+        <section class="section section-home">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-6 col-xxl-5">
@@ -98,38 +98,39 @@
                 <div class="row">
                     <div class="col-xxl-7 col-xl-10">
                         <div class="vacancies">
-                            <div class="vacancies-box">
+                            <a href="vacancy.html" class="vacancies-box">
                                 <div class="vacancies-box__info">
                                     <span class="vacancies-box__number">01</span>
                                     <p class="vacancies-box__name">Менеджер по продажам</p>
                                 </div>
-                                <a href="vacancy.html" class="button-action button-action_outline-light">
+                                <span class="vacancies-box__btn">
+                                    <svg><use xlink:href="./img/spritemap.svg#sprite-arrow-btn"></use></svg>
+                                </span>
+                                <!--<a href="vacancy.html" class="button-action button-action_outline-light">
                                     <span class="button-action__text">Связаться</span>
                                     <span class="button-action__ico"><svg><use xlink:href="img/spritemap.svg#sprite-arrow-btn"></use></svg></span>
-                                </a>
-                            </div>
+                                </a>-->
+                            </a>
 
-                            <div class="vacancies-box">
+                            <a href="vacancy.html" class="vacancies-box">
                                 <div class="vacancies-box__info">
                                     <span class="vacancies-box__number">02</span>
                                     <p class="vacancies-box__name">Makeup man</p>
                                 </div>
-                                <a href="vacancy.html" class="button-action button-action_outline-light">
-                                    <span class="button-action__text">Связаться</span>
-                                    <span class="button-action__ico"><svg><use xlink:href="img/spritemap.svg#sprite-arrow-btn"></use></svg></span>
-                                </a>
-                            </div>
+                                <span class="vacancies-box__btn">
+                                    <svg><use xlink:href="./img/spritemap.svg#sprite-arrow-btn"></use></svg>
+                                </span>
+                            </a>
 
-                            <div class="vacancies-box">
+                            <a href="vacancy.html" class="vacancies-box">
                                 <div class="vacancies-box__info">
                                     <span class="vacancies-box__number">03</span>
                                     <p class="vacancies-box__name">SEO-специалист</p>
                                 </div>
-                                <a href="vacancy.html" class="button-action button-action_outline-light">
-                                    <span class="button-action__text">Связаться</span>
-                                    <span class="button-action__ico"><svg><use xlink:href="img/spritemap.svg#sprite-arrow-btn"></use></svg></span>
-                                </a>
-                            </div>
+                                <span class="vacancies-box__btn">
+                                    <svg><use xlink:href="./img/spritemap.svg#sprite-arrow-btn"></use></svg>
+                                </span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -198,7 +199,7 @@
 </div>
 
 <!-- Модальное окно обратной связи -->
-<div class="modal fade" id="modal_callback" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="modal_callback_title" aria-hidden="true">
+<div class="modal fade modal-form" id="modal_callback" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="modal_callback_title" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
@@ -266,9 +267,79 @@
     </div>
 </div>
 
+<div class="modal fade modal-form" id="modal_vacancy" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="modal_vacancy_title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modal_vacancy_title">Форма связи</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <svg>
+                        <use xlink:href="./img/spritemap.svg#sprite-star"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="" class="callback-form">
+                    <div class="row">
+                        <div class="col-12">
+                            <label class="d-block form-group">
+                                <input type="text" placeholder="Ваше имя" class="form-control">
+                            </label>
+                        </div>
+
+                        <div class="col-12">
+                            <label class="d-block form-group">
+                                <input type="tel" placeholder="Ваш телефон" class="form-control mask-phone">
+                            </label>
+                        </div>
+
+                        <div class="col-12">
+                            <label class="d-block form-group select-wrap">
+                                <select class="select2 js-example-placeholder-single" data-placeholder="Вакансия" style="width: 100%">
+                                    <option></option>
+                                    <option value="01">Дизайнер</option>
+                                    <option value="02">СЕО</option>
+                                    <option value="03">HTML Верстальщик</option>
+                                    <option value="04">Back-end Developer</option>
+                                    <option value="05">Front-end Developer</option>
+                                </select>
+                            </label>
+                        </div>
+
+                        <div class="col-12">
+                            <label class="form-group d-flex button-action button-action_outline-light">
+                                <input type="file" hidden>
+                                <span class="button-action__text">Ваше резюме</span>
+                                <span class="button-action__ico"><svg><use xlink:href="img/spritemap.svg#sprite-link"></use></svg></span>
+                            </label>
+                        </div>
+
+                        <div class="col-12">
+                            <label class="d-block form-group">
+                                <input type="checkbox" checked hidden>
+                                <span class="checkbox">
+                                    <span class="checkbox__style">
+                                        <svg><use xlink:href="img/spritemap.svg#sprite-star"></use></svg>
+                                    </span>
+                                    <span class="checkbox__text">Я даю согласие на обработку информации</span>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <button class="button-action button-action_sm btn-block">
+                        <span class="button-action__text">Отправить</span>
+                        <span class="button-action__ico"><svg><use xlink:href="img/spritemap.svg#sprite-arrow-btn"></use></svg></span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="icon-load">
     <picture><img src="img/favicon.svg" alt="pre-loader"></picture>
 </div>
 <!-- BODY END   -->
-<script type="text/javascript" src="bundle.002da8c19f94b08ef3ce.min.js"></script></body>
+<script type="text/javascript" src="bundle.79f9af12558f4757e8e1.min.js"></script></body>
 </html>
