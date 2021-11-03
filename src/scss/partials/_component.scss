@@ -646,11 +646,15 @@ textarea {
   border: 1px solid $darkness-color;
   border-radius: 120px;
   overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
   transform: translate(100%, 100%) scale(0);
   transition: $transition-base;
   z-index: 10;
 
   &.show {
+    opacity: 1;
+    visibility: visible;
     transform: translate(0%, 0%) scale(1);
   }
 
