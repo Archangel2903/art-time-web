@@ -34,7 +34,7 @@ $(function () {
             return false;
         });
 
-        $(window).on('scroll', function (e) {
+        $(window).on('scroll', function () {
             let offsetTop = window.pageYOffset;
 
             if (offsetTop <= 1100) {
@@ -222,7 +222,7 @@ $(function () {
     })();
 
 // File input listener
-    (function() {
+    /*(function() {
         const file = document.querySelectorAll('input[type="file"]');
         file.forEach((el, i) => {
             if (el.nextElementSibling.classList.contains('button-action__text')) {
@@ -241,7 +241,7 @@ $(function () {
 
             reader.readAsDataURL(input.files[0]);
         }
-    })();
+    })();*/
 
 // Lazy load observer
     (function () {
