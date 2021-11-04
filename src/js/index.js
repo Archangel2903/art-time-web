@@ -121,6 +121,7 @@ $(function () {
 
         selectStyled.select2({
             minimumResultsForSearch: Infinity,
+            dropdownParent: $('.dropdown-wrapper'),
         });
     })();
 
