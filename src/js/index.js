@@ -116,14 +116,14 @@ $(function () {
     })();
 
 // Select2
-    (function() {
+    /*(function() {
         let selectStyled = $('.select2');
 
         selectStyled.select2({
             minimumResultsForSearch: Infinity,
             dropdownParent: $('.dropdown-wrapper'),
         });
-    })();
+    })();*/
 
 // Swiper slider
     (function() {
