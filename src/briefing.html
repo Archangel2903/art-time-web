@@ -1121,6 +1121,30 @@
     </div>
 </div>
 
+<!-- Модальное окно благодарности -->
+<div class="modal fade modal-form" id="modal_thanks" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="modal_thanks_title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modal_thanks_title">Заявка отправлена</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <svg>
+                        <use xlink:href="./img/spritemap.svg#sprite-star"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Ваша заявка отправлена! <br>Спасибо за проявленный интерес</p>
+
+                <button class="button-action button-action_sm btn-block" data-dismiss="modal">
+                    <span class="button-action__text">Закрыть</span>
+                    <span class="button-action__ico"><svg><use xlink:href="img/spritemap.svg#sprite-arrow-btn"></use></svg></span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <button id="to-top">
     <svg><use xlink:href="./img/spritemap.svg#sprite-arrow-btn"></use></svg>
 </button>
