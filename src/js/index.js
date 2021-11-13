@@ -195,7 +195,7 @@ $(function () {
     })();
 
 // Step form
-    (function() {
+    /*(function() {
         const formNav = $('.briefing-form .briefing-form__control-btn');
         formNav.on('click', function(e) {
             e.preventDefault();
@@ -220,7 +220,7 @@ $(function () {
                 }
             }
         });
-    })();
+    })();*/
 
 // File input listener
     /*(function() {
