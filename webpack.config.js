@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlCriticalWebpackPlugin = require('html-critical-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const TerserJSPlugin = require('terser-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
@@ -87,6 +88,32 @@ module.exports = {
             filename: page,
             favicon: './src/favicon.ico',
             inject: true
+        })),
+        new HtmlCriticalWebpackPlugin({
+            base: path.resolve(__dirname, 'dist'),
+            src: 'index.html',
+            dest: 'index.html',
+            inline: true,
+            minify: false,
+            extract: false,
+            width: 375,
+            height: 565,
+            penthouse: {
+                blockJSRequests: false,
+            }
+        }),
+        ...pages.map((page) => new HtmlCriticalWebpackPlugin({
+            base: path.resolve(__dirname, 'dist'),
+            src: page,
+            dest: page,
+            inline: true,
+            minify: false,
+            extract: false,
+            width: 375,
+            height: 565,
+            penthouse: {
+                blockJSRequests: false,
+            }
         })),
         new SVGSpritemapPlugin("src/img/icons/*.svg", {
             output: {
