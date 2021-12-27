@@ -89,20 +89,7 @@ module.exports = {
             favicon: './src/favicon.ico',
             inject: true
         })),
-        new HtmlCriticalWebpackPlugin({
-            base: path.resolve(__dirname, 'dist'),
-            src: 'index.html',
-            dest: 'index.html',
-            inline: true,
-            minify: false,
-            extract: false,
-            width: 375,
-            height: 565,
-            penthouse: {
-                blockJSRequests: false,
-            }
-        }),
-        ...pages.map((page) => new HtmlCriticalWebpackPlugin({
+        /*...pages.map((page) => new HtmlCriticalWebpackPlugin({
             base: path.resolve(__dirname, 'dist'),
             src: page,
             dest: page,
@@ -114,7 +101,7 @@ module.exports = {
             penthouse: {
                 blockJSRequests: false,
             }
-        })),
+        })),*/
         new SVGSpritemapPlugin("src/img/icons/*.svg", {
             output: {
                 filename: "img/spritemap.svg"

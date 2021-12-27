@@ -116,14 +116,14 @@ $(function () {
     })();
 
 // Select2
-    (function() {
+/*    (function() {
         let selectStyled = $('.select2');
 
         selectStyled.select2({
             minimumResultsForSearch: Infinity,
             dropdownParent: $('.dropdown-wrapper'),
         });
-    })();
+    })();*/
 
 // Swiper slider
     (function() {
@@ -249,6 +249,8 @@ $(function () {
         /*const darkSection = document.querySelectorAll('.dark');
         let sectionObserve = new IntersectionObserver(function (elements) {
             elements.forEach(function (entry) {
+                console.log(entry);
+                console.log(entry.intersectionRatio);
                 if (entry.intersectionRatio >= 0 && entry.isIntersecting) {
                     document.body.classList.add('dark');
                 }

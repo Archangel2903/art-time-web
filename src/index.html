@@ -95,15 +95,21 @@
                         </h1>
                         <p class="main-home__text"><span>разработка</span><span>дизайн</span><span>продвижение</span></p>
 
-                        <button class="button-action" data-toggle="modal" data-target="#modal_callback">
-                            <span class="button-action__text">Связаться</span>
-                            <span class="button-action__ico"><svg><use xlink:href="img/spritemap.svg#sprite-arrow-r"></use></svg></span>
-                        </button>
+                        <div class="button-wrap position-relative d-inline-flex">
+                            <picture class="button-wrap__snow">
+                                <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/snowdrift.svg') %>" alt="image" title="image">
+                            </picture>
+
+                            <button class="button-action" data-toggle="modal" data-target="#modal_callback">
+                                <span class="button-action__text">Связаться</span>
+                                <span class="button-action__ico"><svg><use xlink:href="img/spritemap.svg#sprite-arrow-r"></use></svg></span>
+                            </button>
+                        </div>
                     </div>
 
                     <div class="col-xl-4 offset-xl-1">
                         <picture class="main-home__pic">
-                            <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/abstract01.svg') %>" alt="image" title="image">
+                            <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/abstract01-ne.svg') %>" alt="image" title="image">
                         </picture>
                     </div>
                 </div>
@@ -112,7 +118,8 @@
 
         <section class="section section-list-block">
             <div class="list-block container">
-                <p class="title-section">Мы предлагаем полный спектр услуг по индивидуальному дизайну, разработке и продвижению, чтобы помочь вам превратить ваши идеи в реальность.</p>
+                <p class="title-section">Мы предлагаем полный спектр услуг по индивидуальному дизайну, разработке и продвижению, чтобы помочь вам превратить ваши идеи в
+                    реальность.</p>
 
                 <div class="row">
                     <div class="col-xxl-3 col-xl-4 col-sm-6 mb-5">
@@ -363,14 +370,16 @@
         <section class="section section-stages-main">
             <div class="stages-main container">
                 <div class="stages-info">
-                    <p class="stages-info__text title-section">В основе нашей философии дизайна лежит решение проблем. Мы фокусируемся на том, чтобы предоставить пользователям
+                    <p class="stages-info__text title-section">В основе нашей философии дизайна лежит решение проблем. Мы фокусируемся на том, чтобы предоставить
+                        пользователям
                         захватывающий опыт и впечатления</p>
 
                     <picture class="stages-info__pic">
                         <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/stage-decor.svg') %>" alt="image" title="image">
                     </picture>
 
-                    <p class="stages-info__text title-section">Как агентство с полным спектром услуг, мы тесно сотрудничаем с нашими клиентами, чтобы определять, проектировать и
+                    <p class="stages-info__text title-section">Как агентство с полным спектром услуг, мы тесно сотрудничаем с нашими клиентами, чтобы определять,
+                        проектировать и
                         реализовывать идеи заложенные в проект</p>
                 </div>
 
@@ -413,7 +422,8 @@
                         <div class="stages-slider-content stages-slider swiper-container">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <p class="stages-slider-content__text">Именно здесь на помощь приходят креативные дизайнеры пользовательского интерфейса, работающие с одобрения клиента и потребностей
+                                    <p class="stages-slider-content__text">Именно здесь на помощь приходят креативные дизайнеры пользовательского интерфейса, работающие с
+                                        одобрения клиента и потребностей
                                         проекта. Прототипы преобразуются в типографику, цветную графику, анимацию, кнопки, меню и многое другое. Целевая аудитория – один
                                         из
                                         ключевых факторов, принимаемых во внимание при разработке. Дизайн демонстрирует, насколько уникальным может быть веб-сайт, и это
@@ -423,7 +433,8 @@
                                 </div>
 
                                 <div class="swiper-slide">
-                                    <p class="stages-slider-content__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores ipsam modi necessitatibus perspiciatis recusandae sint
+                                    <p class="stages-slider-content__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores ipsam modi necessitatibus
+                                        perspiciatis recusandae sint
                                         veritatis, voluptate voluptatem! Cum doloremque eligendi enim fugit ipsam obcaecati omnis, placeat repellendus similique, soluta
                                         temporibus vel voluptatem! Animi dolores eligendi magnam, optio reiciendis reprehenderit sed. Beatae, blanditiis corporis ducimus
                                         exercitationem in iusto tenetur. Ad aliquam aperiam blanditiis culpa dolores eveniet expedita fuga fugit iste iusto libero
@@ -436,7 +447,8 @@
                                 </div>
 
                                 <div class="swiper-slide">
-                                    <p class="stages-slider-content__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A alias esse et facere harum iste reiciendis repellendus veritatis?
+                                    <p class="stages-slider-content__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A alias esse et facere harum iste
+                                        reiciendis repellendus veritatis?
                                         Architecto autem commodi consequuntur cum deserunt dolorem doloremque dolores earum eligendi enim eum eveniet exercitationem harum
                                         in itaque iure magni molestiae mollitia necessitatibus nemo nihil odio odit perferendis quae quos repellendus reprehenderit
                                         repudiandae rerum saepe sequi, totam velit vitae voluptatum. Amet assumenda at eius expedita harum illum magnam, maiores, maxime
@@ -938,7 +950,8 @@
 </div>
 
 <!-- Модальное окно обратной связи -->
-<div class="modal fade modal-form" id="modal_callback" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="modal_callback_title" aria-hidden="true">
+<div class="modal fade modal-form" id="modal_callback" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="modal_callback_title"
+     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
@@ -1007,7 +1020,9 @@
 </div>
 
 <button id="to-top">
-    <svg><use xlink:href="./img/spritemap.svg#sprite-arrow-btn"></use></svg>
+    <svg>
+        <use xlink:href="./img/spritemap.svg#sprite-arrow-btn"></use>
+    </svg>
 </button>
 <div class="icon-load">
     <picture><img src="<%= require('./img/favicon.svg') %>" alt="pre-loader"></picture>

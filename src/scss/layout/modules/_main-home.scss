@@ -3,6 +3,17 @@
 *************************************************/
 .section-main-home {
   padding: 60px 0;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: transparent url('./../img/snow.svg') no-repeat;
+    pointer-events: none;
+  }
 }
 
 .main-home {
@@ -62,6 +73,20 @@
 
   .button-action {
 
+  }
+}
+
+.button-wrap {
+  &__snow {
+    position: absolute;
+    top: -26px;
+    left: 0;
+    z-index: 2;
+    pointer-events: none;
+
+    img {
+      width: 100%;
+    }
   }
 }
 

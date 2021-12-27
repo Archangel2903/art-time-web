@@ -6,7 +6,9 @@
 }
 
 .portfolio {
-  &__head {}
+  &__head {
+    margin-bottom: 1.5rem;
+  }
 
   &__body {
     &> *:last-child {
