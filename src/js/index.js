@@ -258,7 +258,7 @@ $(function () {
                     document.body.classList.remove('dark');
                 }
             });
-        });
+        }, {threshold: 0.25});
         if (darkSection.length) {
             darkSection.forEach(function (section) {
                 sectionObserve.observe(section);

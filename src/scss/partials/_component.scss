@@ -661,6 +661,7 @@ textarea {
   svg {
     width: 18px;
     height: 18px;
+    fill: $darkness-color !important;
     transform: rotate(-90deg);
   }
 }
