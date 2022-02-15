@@ -246,6 +246,7 @@ $(function () {
 
 // Lazy load observer
     (function () {
+        /*
         const darkSection = document.querySelectorAll('.dark');
         let sectionObserve = new IntersectionObserver(function (elements) {
             elements.forEach(function (entry) {
@@ -264,6 +265,7 @@ $(function () {
                 sectionObserve.observe(section);
             });
         }
+        */
 
         const imagesAll = document.querySelectorAll('img[data-src]');
         let imgObserve = new IntersectionObserver(function (entries) {

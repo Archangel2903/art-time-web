@@ -22,6 +22,7 @@ html, body {
   font-size: $font-size-default;
   line-height: 1.667;
   background: $lightning-color;
+  transition: $transition-base !important;
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, main {

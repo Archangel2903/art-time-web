@@ -1,5 +1,9 @@
 $text-color: white;
 
+:root {
+  --white: white;
+}
+
 .dark {
   color: $text-color;
   background: $darkness-color;
@@ -30,9 +34,12 @@ $text-color: white;
         background: white;
       }
     }
+    &__body {
+      background: $darkness-color;
+    }
   }
   .button-action {
-    border: 1px solid white !important;
+    border: 1px solid var(--white) !important;
 
     &__ico {
       svg {
@@ -72,6 +79,11 @@ $text-color: white;
           }
         }
       }
+    }
+
+    &__num {
+      color: $darkness-color;
+      background: $text-color;
     }
   }
 
@@ -134,12 +146,35 @@ $text-color: white;
       &> * {
         color: $text-color !important;
       }
+
+      svg {
+        fill: $lightning-color;
+      }
+
+      &-title {
+        &::after {
+          background: $lightning-color;
+        }
+      }
     }
   }
+
+  .list-block__box
 
   .portfolio {
     &__category-name {
       color: white;
+    }
+  }
+
+  .stages-info {
+    &__pic {
+      fill: transparent;
+      stroke: white;
+
+      path {
+        stroke: white;
+      }
     }
   }
 
@@ -148,6 +183,46 @@ $text-color: white;
       a {
         border-bottom: 1px solid $lightning-color;
       }
+    }
+  }
+
+  .faq {
+    &__box-header-trigger {
+      background: white;
+
+      svg {
+        fill: $darkness-color;
+      }
+    }
+  }
+
+  .news-list {
+    &__box {
+      &-author {
+        color: $text-color;
+      }
+
+      &-title {
+        color: $text-color;
+      }
+    }
+  }
+
+  .blog-article-share {
+    &__list {
+      a {
+        background: $text-color;
+
+        svg {
+          fill: $darkness-color;
+        }
+      }
+    }
+  }
+
+  .modal {
+    &-content {
+      background: $darkness-color;
     }
   }
 }
