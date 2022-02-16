@@ -77,6 +77,11 @@
 }
 @include media-breakpoint-up(xl) {
   .section-stages {
+    padding-bottom: 90px;
+  }
+}
+@include media-breakpoint-up(xxxl) {
+  .section-stages {
     padding-bottom: 200px;
   }
 }

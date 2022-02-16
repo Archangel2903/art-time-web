@@ -156,7 +156,7 @@
 }
 @include media-breakpoint-up(xl) {
   .section-case-pictures {
-    padding: 0 0 170px;
+    padding: 0 0 90px;
 
     picture {
       img {
@@ -180,22 +180,34 @@
   }
 
   .section-case-statistic {
-    padding: 0 0 170px;
+    padding: 0 0 90px;
   }
 
   .case {
     &-tools {
-      margin-bottom: 170px;
+      margin-bottom: 90px;
     }
   }
 }
 @include media-breakpoint-up(xxl) {}
 @include media-breakpoint-up(xxxl) {
   .section-case-pictures {
+    padding: 0 0 170px;
+
     picture {
       img {
         height: 700px;
       }
+    }
+  }
+
+  .section-case-statistic {
+    padding: 0 0 170px;
+  }
+
+  .case {
+    &-tools {
+      margin-bottom: 170px;
     }
   }
 }

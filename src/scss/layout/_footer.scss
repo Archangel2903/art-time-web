@@ -115,7 +115,7 @@ footer.footer {
 }
 @include media-breakpoint-up(xl) {
   footer.footer {
-    padding-top: 170px;
+    padding-top: 90px;
   }
 
   .footer-decor {
@@ -133,5 +133,10 @@ footer.footer {
 
   .copyright {
     margin-top: 190px;
+  }
+}
+@include media-breakpoint-up(xxxl) {
+  footer.footer {
+    padding-top: 170px;
   }
 }

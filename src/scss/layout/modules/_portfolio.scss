@@ -75,13 +75,19 @@
 
 @include media-breakpoint-up(xl) {
   .section-portfolio-preview {
-    padding: 170px 0 100px;
+    padding: 90px 0;
   }
 
   .portfolio {
     &__head {
       margin-bottom: 90px;
     }
+  }
+}
+
+@include media-breakpoint-up(xxxl) {
+  .section-portfolio-preview {
+    padding: 170px 0 100px;
   }
 }
 

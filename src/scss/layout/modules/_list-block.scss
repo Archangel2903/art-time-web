@@ -98,10 +98,6 @@
   }
 }
 @include media-breakpoint-up(xl) {
-  .section-list-block {
-    padding-bottom: 170px;
-  }
-
   .list-block {
     &__box {
       &:hover {
@@ -124,5 +120,10 @@
         transform: translateX(-100%);
       }
     }
+  }
+}
+@include media-breakpoint-up(xxxl) {
+  .section-list-block {
+    padding: 0 0 90px;
   }
 }

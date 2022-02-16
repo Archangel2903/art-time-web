@@ -80,7 +80,7 @@
 }
 @include media-breakpoint-up(xl) {
   .section-stages-main {
-    padding: 170px 0 200px;
+    padding: 90px 0;
   }
 
   .stages {
@@ -108,5 +108,10 @@
         }
       }
     }
+  }
+}
+@include media-breakpoint-up(xxxl) {
+  .section-stages-main {
+    padding: 170px 0 200px;
   }
 }

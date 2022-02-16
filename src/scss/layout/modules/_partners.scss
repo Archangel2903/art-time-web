@@ -64,6 +64,15 @@
 }
 @include media-breakpoint-up(xl) {
   .section-partners {
+    padding: 90px 0 60px;
+  }
+
+  .section-partners-reviews {
+    padding: 90px 0;
+  }
+}
+@include media-breakpoint-up(xxxl) {
+  .section-partners {
     padding: 170px 0 60px;
   }
 

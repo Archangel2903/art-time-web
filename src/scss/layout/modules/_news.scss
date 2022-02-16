@@ -153,7 +153,7 @@
 }
 @include media-breakpoint-up(xl) {
   .section-last-news {
-    padding-bottom: 170px;
+    padding-bottom: 90px;
   }
 
   .last-news-box {
@@ -175,6 +175,15 @@
       transform: translateX(-50%);
       transition: $transition-base;
     }
+  }
+
+  .section-more-news {
+    padding-bottom: 90px;
+  }
+}
+@include media-breakpoint-up(xxxl) {
+  .section-last-news {
+    padding-bottom: 170px;
   }
 
   .section-more-news {

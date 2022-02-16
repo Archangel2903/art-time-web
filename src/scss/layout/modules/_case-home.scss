@@ -9,12 +9,6 @@
   &__title {
     @extend .section-home__title;
   }
-
-  /*.section-bg {
-    &::after {
-      display: none;
-    }
-  }*/
 }
 
 @include media-breakpoint-up(sm) {}
@@ -22,8 +16,12 @@
 @include media-breakpoint-up(lg) {}
 @include media-breakpoint-up(xl) {
   .section-case-home {
-    padding: 450px 0 120px;
+    padding: 225px 0 60px;
   }
 }
 @include media-breakpoint-up(xxl) {}
-@include media-breakpoint-up(xxxl) {}
+@include media-breakpoint-up(xxxl) {
+  .section-case-home {
+    padding: 450px 0 120px;
+  }
+}

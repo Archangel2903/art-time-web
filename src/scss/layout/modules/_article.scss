@@ -156,6 +156,11 @@
 }
 @include media-breakpoint-up(xl) {
   .section-blog-article {
+    padding: 90px 0;
+  }
+}
+@include media-breakpoint-up(xxxl) {
+  .section-blog-article {
     padding: 120px 0 170px;
   }
 }

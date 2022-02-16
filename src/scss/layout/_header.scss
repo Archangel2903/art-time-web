@@ -253,10 +253,6 @@ header.header {
   }
 }
 @include media-breakpoint-up(lg) {
-  .header-content {
-    padding: 50px 0;
-  }
-
   .menu-rails {
     &__body {
       &-head {
@@ -267,6 +263,8 @@ header.header {
 }
 @include media-breakpoint-up(xl) {
   .header-content {
+    padding: 50px 0;
+
     &__menu {
       &-nav {
         display: block;

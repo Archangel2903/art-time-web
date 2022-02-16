@@ -246,7 +246,7 @@ $(function () {
 
 // Lazy load observer
     (function () {
-        const darkSection = document.querySelectorAll('.dark');
+        const darkSection = document.querySelectorAll('.anchor-theme');
         let sectionObserve = new IntersectionObserver(function (elements) {
             elements.forEach(function (entry) {
                 console.log(entry);
@@ -258,7 +258,7 @@ $(function () {
                     document.body.classList.remove('dark');
                 }
             });
-        }, {threshold: 0.25});
+        }, {threshold: 0.2});
         if (darkSection.length) {
             darkSection.forEach(function (section) {
                 sectionObserve.observe(section);

@@ -1,9 +1,5 @@
 $text-color: white;
 
-:root {
-  --white: white;
-}
-
 .dark {
   color: $text-color;
   background: $darkness-color;
@@ -39,7 +35,7 @@ $text-color: white;
     }
   }
   .button-action {
-    border: 1px solid var(--white) !important;
+    border: 1px solid white !important;
 
     &__ico {
       svg {

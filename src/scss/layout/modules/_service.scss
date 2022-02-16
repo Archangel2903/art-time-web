@@ -8,7 +8,7 @@
 .service {
   &__block {
     &:not(:last-child) {
-      margin-bottom: 100px;
+      margin-bottom: 80px;
     }
 
     .title {
@@ -42,8 +42,22 @@
 }
 @include media-breakpoint-up(xl) {
   .section-service-info {
+    padding-bottom: 90px;
+  }
+
+  .service {
+    &__block {
+      &:not(:last-child) {
+        margin-bottom: 120px;
+      }
+    }
+  }
+}
+@include media-breakpoint-up(xxxl) {
+  .section-service-info {
     padding-bottom: 110px;
   }
+
   .service {
     &__block {
       &:not(:last-child) {

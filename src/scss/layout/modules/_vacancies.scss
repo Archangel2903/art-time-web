@@ -88,6 +88,11 @@
 }
 @include media-breakpoint-up(xl) {
   .section-vacancies {
+    padding-bottom: 90px;
+  }
+}
+@include media-breakpoint-up(xxxl) {
+  .section-vacancies {
     padding-bottom: 200px;
   }
 }

@@ -231,6 +231,15 @@
 }
 @include media-breakpoint-up(xl) {
   .section-glossary-stack {
+    padding-bottom: 90px;
+  }
+
+  .section-glossary-term {
+    padding: 90px 0 120px;
+  }
+}
+@include media-breakpoint-up(xxxl) {
+  .section-glossary-stack {
     padding-bottom: 100px;
   }
 

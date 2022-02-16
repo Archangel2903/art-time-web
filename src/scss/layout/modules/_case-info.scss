@@ -128,6 +128,11 @@
 }
 @include media-breakpoint-up(xl) {
   .section-case-description {
+    padding: 90px 0 120px;
+  }
+}
+@include media-breakpoint-up(xxxl) {
+  .section-case-description {
     padding: 170px 0 240px;
   }
 }

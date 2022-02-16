@@ -80,6 +80,11 @@
 
 @include media-breakpoint-up(xl) {
   .section-faq {
+    padding: 90px 0;
+  }
+}
+@include media-breakpoint-up(xxxl) {
+  .section-faq {
     padding: 170px 0;
   }
 }

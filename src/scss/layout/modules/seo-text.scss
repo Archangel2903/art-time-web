@@ -23,6 +23,11 @@
 
 @include media-breakpoint-up(xl) {
   .section-seo-text {
+    padding-bottom: 90px;
+  }
+}
+@include media-breakpoint-up(xxxl) {
+  .section-seo-text {
     padding-bottom: 170px;
   }
 }

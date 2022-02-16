@@ -5,7 +5,7 @@
   padding: 60px 0;
 
   &__title {
-    margin: 0 0 60px;
+    margin: 0 0 40px;
     font-size: 2.222em;
     font-weight: 600;
     line-height: 1.125;
@@ -27,6 +27,16 @@
 @include media-breakpoint-up(lg) {}
 @include media-breakpoint-up(xl) {
   .section-home {
+    padding: 90px 0;
+
+    &__title {
+      margin: 0 0 60px;
+    }
+  }
+}
+@include media-breakpoint-up(xxl) {}
+@include media-breakpoint-up(xxxl) {
+  .section-home {
     padding: 120px 0 150px;
 
     &__title {
@@ -34,5 +44,3 @@
     }
   }
 }
-@include media-breakpoint-up(xxl) {}
-@include media-breakpoint-up(xxxl) {}

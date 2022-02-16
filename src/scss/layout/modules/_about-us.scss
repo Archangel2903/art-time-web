@@ -135,7 +135,7 @@
 }
 @include media-breakpoint-up(xl) {
   .section-about-company {
-    padding: 170px 0 0;
+    padding: 90px 0 0;
 
     &__title {
       font-size: 8em;
@@ -148,12 +148,12 @@
   }
 
   .about-company {
-    padding-top: 120px;
-    padding-bottom: 240px;
+    padding-top: 90px;
+    padding-bottom: 160px;
   }
 
   .section-qualities {
-    padding: 170px 0;
+    padding: 90px 0;
   }
 }
 @include media-breakpoint-up(xxl) {
@@ -165,9 +165,20 @@
 }
 @include media-breakpoint-up(xxxl) {
   .section-about-company {
+    padding: 170px 0 0;
+
     &__title {
       font-size: 11.667em;
       line-height: 200px;
     }
+  }
+
+  .about-company {
+    padding-top: 120px;
+    padding-bottom: 240px;
+  }
+
+  .section-qualities {
+    padding: 170px 0;
   }
 }

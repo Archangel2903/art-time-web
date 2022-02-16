@@ -56,6 +56,11 @@
 }
 @include media-breakpoint-up(xl) {
   .section-contacts {
+    padding: 90px 0;
+  }
+}
+@include media-breakpoint-up(xxxl) {
+  .section-contacts {
     padding: 120px 0 170px;
   }
 }
